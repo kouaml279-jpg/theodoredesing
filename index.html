@@ -1,71 +1,1413 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Theo Design — templates numériques et formation complète en design graphique.">
-<title>Theo Design — Designs professionnels & formation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Theo Design — Templates Canva & Formation Design Graphique | Cameroun</title>
+<meta name="description" content="Theo Design vend des templates Canva premium et une formation design graphique pour entrepreneurs au Cameroun.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
 <style>
-:root{--bg:#090a0d;--panel:#2B2B2B318;--panel2:#171a21;--text:#f7f7f8;--muted:#a7abb5;--line:#262a33;--accent:#b8ff3d;--accent2:#8ee000;--danger:#ff6b6b;--white:#fff;--shadow:0 20px 60px rgba(0,0,0,.28);--radius:22px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#08090c 0,#0d0f14 55%,#08090c);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}a{text-decoration:none;color:inherit}button,input,select{font:inherit}button{cursor:pointer}.container{width:min(1160px,92%);margin:auto}.topbar{font-size:13px;color:#d9dbe0;background:#0c0e12;border-bottom:1px solid var(--line);padding:8px 0;text-align:center}.nav{position:sticky;top:0;z-index:30;background:rgba(8,9,12,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:-.05em;font-size:23px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:24px;color:#c8cbd2;font-size:14px}.navlinks a:hover{color:var(--accent)}.nav-actions{display:flex;gap:9px;align-items:center}.iconbtn,.btn{border:1px solid var(--line);background:#15171c;color:var(--text);padding:11px 15px;border-radius:12px}.btn{font-weight:800;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--accent);color:#0b0c0d;border-color:var(--accent)}.btn-primary:hover{background:#c8ff62}.btn-ghost{background:transparent}.menu{display:none}.hero{padding:84px 0 55px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:500px;height:500px;right:-180px;top:-180px;background:radial-gradient(circle,rgba(184,255,61,.18),transparent 68%);pointer-events:none}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--accent);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.12em}.dot{width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 22px var(--accent)}h1{font-size:clamp(44px,7vw,84px);line-height:.98;letter-spacing:-.065em;margin:18px 0 22px;max-width:860px}h1 em{font-style:normal;color:var(--accent)}.hero p{font-size:18px;color:var(--muted);max-width:680px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:35px;color:#c6c9d0;font-size:13px}.trust b{color:#fff}.section{padding:75px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.section h2{font-size:clamp(30px,4vw,48px);line-height:1.05;letter-spacing:-.05em;margin:0}.section-head p{color:var(--muted);max-width:560px;margin:0}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.cat{padding:20px;border:1px solid var(--line);background:linear-gradient(145deg,#12151a,#0d0f13);border-radius:18px;min-height:120px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}.cat:hover{border-color:#48505e;transform:translateY(-3px)}.cat small{color:var(--muted)}.cat strong{font-size:16px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.filter{padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:#101217;color:#bfc3cb}.filter.active{background:var(--accent);color:#090a0b;border-color:var(--accent);font-weight:800}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{border:1px solid var(--line);background:linear-gradient(160deg,#14171d,#0f1116);border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.12)}.preview{height:205px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}.preview:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.08),transparent 40%,rgba(184,255,61,.06))}.mock{width:78%;height:78%;border-radius:12px;background:#f4f4f0;color:#2B2B2B;padding:17px;box-shadow:0 18px 30px rgba(0,0,0,.35);transform:rotate(-2deg);position:relative;z-index:1}.mock.dark{background:#121419;color:#fff;border:1px solid #2c313b}.mock .bar{height:7px;width:38%;background:var(--accent);border-radius:10px;margin-bottom:18px}.mock h4{font-size:20px;line-height:1;margin:0 0 8px}.mock p{font-size:10px;color:#666}.badge{position:absolute;z-index:2;top:12px;left:12px;background:var(--accent);color:#090a0b;font-size:11px;font-weight:900;padding:6px 8px;border-radius:999px}.card-body{padding:17px}.card-body h3{font-size:17px;margin:0 0 7px}.card-body p{font-size:13px;color:var(--muted);min-height:40px;margin:0}.price{font-size:21px;font-weight:900;margin:13px 0}.card-actions{display:flex;gap:8px}.card-actions .btn{flex:1;padding:10px 8px;font-size:12px}.split{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}.feature-box,.course-box{border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,#13161c,#0c0e12);padding:30px}.feature-box h3,.course-box h3{font-size:30px;letter-spacing:-.04em;margin:0 0 14px}.checks{display:grid;gap:11px;margin:22px 0}.check{display:flex;gap:10px;color:#d8dbe1}.check b{color:var(--accent)}.modules{display:grid;gap:10px}.module{border:1px solid var(--line);border-radius:15px;background:#101217;overflow:hidden}.module summary{cursor:pointer;padding:17px;font-weight:800;list-style:none}.module summary::-webkit-details-marker{display:none}.module-content{padding:0 17px 17px;color:var(--muted);font-size:14px}.module-content li{margin:5px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:25px}.stat{padding:18px;border:1px solid var(--line);border-radius:16px;background:#101217}.stat b{font-size:25px;display:block}.stat span{color:var(--muted);font-size:12px}.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.quote{padding:22px;border:1px solid var(--line);background:#101217;border-radius:18px}.avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#fff);color:#2B2B2B;display:grid;place-items:center;font-weight:900}.stars{color:var(--accent);letter-spacing:2px}.quote p{color:#d1d4da}.quote small{color:var(--muted)}.cta{margin:25px 0 70px;padding:45px;border-radius:28px;border:1px solid #36411f;background:radial-gradient(circle at 85% 10%,rgba(184,255,61,.17),transparent 35%),#10130e;display:flex;justify-content:space-between;gap:30px;align-items:center}.cta h2{font-size:38px;letter-spacing:-.05em;margin:0 0 8px}.cta p{color:#adb4a4;margin:0}.footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted)}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:25px}.footer h4{color:#fff;margin:0 0 12px}.footer a{display:block;margin:7px 0;font-size:13px}.whatsapp{position:fixed;right:18px;bottom:18px;z-index:40;background:#25d366;color:#fff;border-radius:999px;padding:13px 16px;box-shadow:0 12px 35px rgba(0,0,0,.4);font-weight:900;font-size:13px}.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);z-index:80;display:none;align-items:center;justify-content:center;padding:16px}.modal.open{display:flex}.modal-box{width:min(720px,100%);max-height:92vh;overflow:auto;background:#2B2B2B419;border:1px solid #30343e;border-radius:24px;padding:25px;box-shadow:var(--shadow)}.modal-head{display:flex;justify-content:space-between;gap:15px;align-items:start}.close{border:0;background:#20232a;color:#fff;border-radius:10px;width:38px;height:38px}.form{display:grid;gap:12px}.form label{font-size:12px;color:#aeb2bb}.form input,.form select{width:100%;padding:12px 13px;background:#0c0e12;border:1px solid #2a2e37;color:#fff;border-radius:11px;outline:none}.form input:focus{border-color:var(--accent)}.paybox{display:grid;gap:10px;margin:18px 0}.paymethod{border:1px solid var(--line);padding:14px;border-radius:13px;background:#0d0f13}.paymethod b{display:block;color:var(--accent);margin-bottom:3px}.notice{padding:12px 14px;border-radius:12px;background:#151a10;border:1px solid #34431f;color:#d8e8bf;font-size:13px}.danger{color:#ff9c9c}.dashboard{display:grid;grid-template-columns:210px 1fr;gap:18px}.side{border:1px solid var(--line);border-radius:18px;background:#101217;padding:10px;height:max-content}.side button{display:block;width:100%;text-align:left;padding:11px;border:0;background:transparent;color:#bfc3cb;border-radius:10px}.side button.active,.side button:hover{background:#1b1f27;color:#fff}.panel{border:1px solid var(--line);border-radius:18px;background:#101217;padding:22px}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{padding:12px 9px;border-bottom:1px solid var(--line);text-align:left}.table th{color:#8f95a0}.hidden{display:none!important}.toast{position:fixed;right:18px;top:88px;z-index:100;background:#161a20;border:1px solid #363c47;border-radius:13px;padding:13px 15px;box-shadow:var(--shadow);display:none}.toast.show{display:block}.empty{text-align:center;padding:35px;color:var(--muted)}.hero-pro{padding:78px 0 65px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.hero-copy h1{max-width:760px}.hero-copy p{max-width:650px}.hero-showcase{min-height:430px;position:relative;display:grid;place-items:center}.showcase-glow{position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(184,255,61,.24),transparent 68%);filter:blur(5px)}.showcase-card{position:relative;width:min(390px,88%);height:330px;border:1px solid #3a424e;border-radius:28px;padding:26px;background:linear-gradient(145deg,#f6f7f2 0%,#dfe4d7 100%);color:#10120e;box-shadow:0 30px 80px rgba(0,0,0,.48);transform:rotate(3deg);z-index:2}.showcase-top{display:flex;justify-content:space-between;font-size:10px;font-weight:900;letter-spacing:.12em}.showcase-label{display:inline-block;margin-top:52px;padding:7px 10px;border-radius:99px;background:#2B2B2B;color:#fff;font-size:10px;font-weight:900}.showcase-card strong{display:block;font-size:31px;line-height:.98;letter-spacing:-.05em;margin-top:15px}.showcase-lines{display:grid;gap:6px;margin-top:20px}.showcase-lines i{display:block;height:4px;border-radius:10px;background:#2B2B2B}.showcase-lines i:nth-child(2){width:72%;opacity:.45}.showcase-lines i:nth-child(3){width:45%;opacity:.2}.showcase-price{position:absolute;bottom:25px;font-size:12px;font-weight:800}.floating-card{position:absolute;z-index:4;padding:13px 16px;border:1px solid #303640;background:rgba(15,17,21,.92);backdrop-filter:blur(12px);border-radius:16px;box-shadow:0 15px 40px rgba(0,0,0,.35)}.floating-card b{display:block;color:var(--accent);font-size:18px}.floating-card span{font-size:11px;color:#b8bdc7}.fc-one{right:0;top:54px}.fc-two{left:0;bottom:45px}.section-soft{background:linear-gradient(180deg,#0e1015,#0a0b0e);border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04)}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.benefit{padding:25px;border:1px solid var(--line);border-radius:20px;background:#101217}.benefit-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--accent);color:#0b0d0d;font-weight:900;margin-bottom:24px}.benefit h3{margin:0 0 7px;font-size:20px}.benefit p{margin:0;color:var(--muted);font-size:14px}.cat span{font-size:11px;color:var(--accent);opacity:.85}.learning-banner{display:grid;grid-template-columns:1.2fr .8fr;gap:25px;padding:38px;border-radius:28px;border:1px solid #303922;background:radial-gradient(circle at 85% 20%,rgba(184,255,61,.16),transparent 35%),linear-gradient(145deg,#141813,#0c0f0b)}.learning-banner h2{font-size:clamp(30px,4vw,50px);line-height:1.02;letter-spacing:-.05em;margin:12px 0}.learning-banner p{color:#b5bba9;max-width:650px}.learning-points{display:grid;gap:10px;align-content:center}.learning-points div{display:flex;gap:15px;align-items:center;padding:15px;border:1px solid #2c3327;background:#0d100c;border-radius:14px}.learning-points b{color:var(--accent);font-size:12px}.learning-points span{font-weight:800}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.steps>div{padding:22px;border:1px solid var(--line);border-radius:18px;background:#101217}.steps b{color:var(--accent);font-size:12px}.steps h3{margin:18px 0 6px}.steps p{color:var(--muted);font-size:13px;margin:0}.cta .eyebrow{display:block;margin-bottom:7px}
-@media(max-width:950px){.products{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.testimonials{grid-template-columns:1fr}.dashboard{grid-template-columns:1fr}.side{display:flex;overflow:auto}.side button{white-space:nowrap;width:auto}.navlinks{display:none}.menu{display:block}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.hero-pro{padding:55px 0 45px}.hero-grid{grid-template-columns:1fr;gap:30px}.hero-showcase{min-height:350px}.showcase-card{height:280px}.showcase-card strong{font-size:26px}.fc-one{right:-2px;top:22px}.fc-two{left:-2px;bottom:12px}.benefits,.steps,.learning-banner{grid-template-columns:1fr}.learning-banner{padding:25px}.steps{gap:10px}.section{padding:58px 0}.hero-actions .btn{width:100%;text-align:center}.cta{margin-bottom:45px;padding:28px;display:block}.cta .hero-actions{margin-top:20px!important}.categories{grid-template-columns:1fr 1fr}.products{grid-template-columns:1fr}.showcase-card{width:90%}}
-{.topbar{font-size:11px}.nav-inner{height:64px}.nav-actions .btn{display:none}.hero{padding:60px 0 30px}h1{font-size:50px}.hero p{font-size:16px}.section{padding:55px 0}.products{grid-template-columns:1fr}.categories{grid-template-columns:1fr 1fr}.category{}.cta{padding:28px;display:block}.cta .btn{margin-top:18px;width:100%}.footer-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.whatsapp{right:12px;bottom:12px}.section-head{display:block}.section-head p{margin-top:10px}.modal-box{padding:18px}}
+:root{
+  --bg:#08090c;
+  --surface:#111318;
+  --surface2:#161922;
+  --surface3:#1c202b;
+  --border:#262a33;
+  --border2:#2f3441;
+  --text:#f7f7f8;
+  --muted:#9aa0b2;
+  --muted2:#6b7288;
+  --accent:#b8ff3d;
+  --accent2:#d6ff7a;
+  --accent-soft:rgba(184,255,61,0.12);
+  --radius:18px;
+  --radius-lg:22px;
+  --shadow:0 18px 40px rgba(0,0,0,0.45);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased; line-height:1.5;
+}
+a{color:inherit; text-decoration:none}
+button{font-family:inherit}
+img{max-width:100%; display:block}
+.container{width:min(1180px,92%); margin:0 auto}
+.mono{font-family:'Space Grotesk', monospace}
+
+/* annonce */
+.annonce{
+  background:var(--accent); color:#0a0c0a; font-size:13px; font-weight:700;
+  text-align:center; padding:9px 12px; letter-spacing:.02em; position:relative; z-index:60;
+  display:flex; align-items:center; justify-content:center; gap:10px;
+}
+.annonce span.dot{width:6px; height:6px; background:#0a0c0a; border-radius:50%; display:inline-block; animation:pulse 1.5s infinite}
+.annonce em{font-style:normal; background:#08090c; color:var(--accent); padding:3px 8px; border-radius:999px; font-size:11px; margin-left:6px}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* nav */
+nav{
+  position:sticky; top:0; z-index:50; backdrop-filter:blur(16px);
+  background:rgba(8,9,12,0.82); border-bottom:1px solid var(--border);
+}
+.nav-inner{height:64px; display:flex; align-items:center; justify-content:space-between; gap:16px}
+.logo{font-weight:900; letter-spacing:.14em; font-size:18px; line-height:1}
+.logo b{color:var(--accent)}
+.nav-links{display:none; gap:6px; align-items:center}
+.nav-links a{padding:8px 14px; border-radius:999px; font-size:14px; font-weight:600; color:var(--muted); transition:.2s}
+.nav-links a.active, .nav-links a:hover{color:var(--text); background:var(--surface2)}
+.nav-actions{display:flex; align-items:center; gap:10px}
+.icon-btn{
+  width:42px; height:42px; border-radius:999px; border:1px solid var(--border); background:var(--surface);
+  display:grid; place-items:center; cursor:pointer; position:relative; transition:.2s;
+}
+.icon-btn:hover{border-color:var(--border2); transform:translateY(-1px)}
+.badge{
+  position:absolute; top:-6px; right:-6px; background:var(--accent); color:#08090c;
+  font-size:11px; font-weight:900; min-width:20px; height:20px; border-radius:999px; display:grid; place-items:center; padding:0 5px; border:2px solid var(--bg);
+}
+.btn{
+  border-radius:999px; padding:11px 18px; font-weight:800; font-size:14px; border:1px solid transparent;
+  cursor:pointer; display:inline-flex; align-items:center; gap:8px; justify-content:center; transition:.2s; white-space:nowrap;
+}
+.btn-primary{background:var(--accent); color:#08090c; box-shadow:0 8px 24px rgba(184,255,61,0.22)}
+.btn-primary:hover{background:#c8ff62; transform:translateY(-1px)}
+.btn-ghost{background:transparent; border-color:var(--border); color:var(--text)}
+.btn-ghost:hover{background:var(--surface2)}
+.btn-dark{background:var(--text); color:#08090c}
+.btn-dark:hover{background:#fff}
+.burger{display:grid; place-items:center; width:42px; height:42px; border-radius:999px; border:1px solid var(--border); background:var(--surface); cursor:pointer}
+@media(min-width:900px){
+  .nav-links{display:flex}
+  .burger{display:none}
+  .nav-inner{height:72px}
+}
+
+/* mobile menu */
+.mobile-menu{
+  position:fixed; inset:64px 0 0 0; background:rgba(8,9,12,0.96); backdrop-filter:blur(18px);
+  z-index:49; padding:18px 16px; display:none; flex-direction:column; gap:12px; border-top:1px solid var(--border)
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:16px 18px; border-radius:16px; background:var(--surface); border:1px solid var(--border); font-weight:700; display:flex; justify-content:space-between; align-items:center}
+
+/* hero */
+.hero{padding:28px 0 18px; display:grid; gap:28px}
+.hero-grid{display:grid; gap:28px; align-items:center}
+.eyebrow{display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:800; letter-spacing:.12em; color:var(--accent); text-transform:uppercase; border:1px solid rgba(184,255,61,0.22); background:rgba(184,255,61,0.08); padding:7px 12px; border-radius:999px}
+.hero h1{font-family:'Space Grotesk',sans-serif; font-size:clamp(32px,6vw,56px); line-height:.95; letter-spacing:-.04em; margin:14px 0 14px; font-weight:700}
+.hero h1 i{color:var(--accent); font-style:normal; position:relative}
+.hero h1 i::after{content:""; position:absolute; left:0; right:0; bottom:6px; height:8px; background:rgba(184,255,61,0.18); z-index:-1; border-radius:4px}
+.hero p.lead{color:var(--muted); font-size:clamp(15px,2.2vw,18px); max-width:560px}
+.hero-actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:18px}
+.trust{display:flex; align-items:center; gap:14px; margin-top:18px; flex-wrap:wrap}
+.trust .avatars{display:flex}
+.trust .avatars img{width:36px; height:36px; border-radius:50%; border:2px solid var(--bg); margin-left:-8px}
+.trust .avatars img:first-child{margin:0}
+.stars{color:#ffb02e; font-size:14px}
+@media(min-width:900px){
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .hero{padding:36px 0 10px}
+}
+
+/* demo card */
+.demo-wrap{position:relative; padding:18px 0 30px}
+.demo-card{
+  background:linear-gradient(180deg,#1a1f2a 0%, #12151d 100%); border:1px solid var(--border); border-radius:24px; overflow:hidden; box-shadow:var(--shadow); position:relative;
+  transform:rotate(-0.6deg);
+}
+.demo-top{padding:14px 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border); background:rgba(255,255,255,0.02)}
+.dots{display:flex; gap:6px}
+.dots span{width:10px; height:10px; border-radius:50%}
+.demo-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:14px}
+.tpl{border-radius:16px; overflow:hidden; background:var(--surface3); border:1px solid var(--border); position:relative; aspect-ratio:1}
+.tpl img{width:100%; height:100%; object-fit:cover}
+.tpl .label{position:absolute; left:8px; bottom:8px; background:rgba(8,9,12,0.82); border:1px solid var(--border); padding:5px 8px; border-radius:999px; font-size:11px; font-weight:800}
+.float-pill{
+  position:absolute; background:var(--text); color:#08090c; padding:10px 14px; border-radius:16px; font-weight:900; font-size:13px; box-shadow:0 12px 30px rgba(0,0,0,0.35); border:1px solid #fff; display:flex; align-items:center; gap:8px;
+}
+.float-pill small{font-weight:700; color:#525866; font-size:11px}
+.float-pill.accent{background:var(--accent); border-color:var(--accent)}
+.pill-a{top:6px; right:-6px; transform:rotate(2deg)}
+.pill-b{bottom:42px; left:-10px; transform:rotate(-2deg)}
+.pill-c{bottom:-14px; right:18px; transform:rotate(1deg)}
+@media(max-width:900px){
+  .pill-a{right:6px; top:0}
+  .pill-b{left:6px}
+}
+
+/* sections */
+.section{padding:28px 0}
+.section-head{display:flex; align-items:end; justify-content:space-between; gap:16px; margin-bottom:16px; flex-wrap:wrap}
+.section-head h2{font-family:'Space Grotesk',sans-serif; font-size:clamp(22px,3.5vw,30px); letter-spacing:-.03em; margin:0}
+.section-head p{color:var(--muted); margin:0; font-size:14px}
+.kicker{color:var(--accent); font-weight:800; font-size:12px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:6px}
+
+/* avantages */
+.advantages{display:grid; gap:12px; grid-template-columns:1fr}
+.adv-card{background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:18px; display:flex; gap:14px; align-items:flex-start}
+.adv-icon{width:44px; height:44px; border-radius:12px; display:grid; place-items:center; background:var(--accent-soft); color:var(--accent); border:1px solid rgba(184,255,61,0.18); flex-shrink:0}
+@media(min-width:700px){.advantages{grid-template-columns:repeat(3,1fr)}}
+
+/* categories */
+.cats{display:grid; grid-template-columns:repeat(2,1fr); gap:10px}
+.cat{
+  background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:14px; display:flex; align-items:center; gap:12px; cursor:pointer; transition:.2s; position:relative; overflow:hidden
+}
+.cat:hover{border-color:var(--border2); transform:translateY(-2px); background:var(--surface2)}
+.cat img{width:46px; height:46px; border-radius:12px; object-fit:cover; border:1px solid var(--border)}
+.cat b{font-size:14px; display:block; line-height:1.1}
+.cat span{font-size:12px; color:var(--muted)}
+.cat .arrow{margin-left:auto; width:28px; height:28px; border-radius:999px; background:var(--surface3); border:1px solid var(--border); display:grid; place-items:center}
+.cat.active{border-color:var(--accent); background:rgba(184,255,61,0.08)}
+@media(min-width:700px){.cats{grid-template-columns:repeat(4,1fr)}}
+
+/* products grid */
+.grid{display:grid; gap:14px; grid-template-columns:1fr}
+@media(min-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.grid{grid-template-columns:repeat(4,1fr)}}
+.product-card{
+  background:var(--surface); border:1px solid var(--border); border-radius:20px; overflow:hidden; display:flex; flex-direction:column; transition:.2s; cursor:pointer;
+}
+.product-card:hover{transform:translateY(-3px); border-color:var(--border2); box-shadow:0 12px 28px rgba(0,0,0,0.25)}
+.product-card .thumb{aspect-ratio:1.15; position:relative; overflow:hidden; background:#0f1117}
+.product-card .thumb img{width:100%; height:100%; object-fit:cover; transition:.4s}
+.product-card:hover .thumb img{transform:scale(1.04)}
+.badge-top{position:absolute; top:10px; left:10px; background:var(--accent); color:#08090c; font-size:11px; font-weight:900; padding:5px 8px; border-radius:999px}
+.price-tag{position:absolute; bottom:10px; right:10px; background:rgba(8,9,12,0.92); border:1px solid var(--border); padding:7px 10px; border-radius:999px; font-weight:900; font-size:13px}
+.product-card .body{padding:14px; display:flex; flex-direction:column; gap:8px; flex:1}
+.product-card h3{font-size:15px; line-height:1.25; margin:0; font-weight:800; min-height:38px}
+.meta{display:flex; gap:8px; flex-wrap:wrap}
+.chip{font-size:11px; font-weight:700; padding:5px 8px; border-radius:999px; background:var(--surface3); border:1px solid var(--border); color:var(--muted)}
+.product-card .foot{margin-top:auto; display:flex; gap:8px}
+.btn-sm{flex:1; padding:10px 12px; border-radius:999px; font-weight:800; font-size:13px; cursor:pointer; border:1px solid var(--border); background:var(--surface3); color:var(--text)}
+.btn-sm.primary{background:var(--accent); color:#08090c; border-color:var(--accent)}
+
+/* banner formation */
+.banner{
+  background:linear-gradient(135deg,#b8ff3d 0%, #d4ff7a 55%, #e8ffc0 100%); color:#08090c; border-radius:24px; padding:22px; display:grid; gap:18px; align-items:center; position:relative; overflow:hidden;
+}
+.banner::after{content:""; position:absolute; width:320px; height:320px; background:radial-gradient(circle at center, rgba(0,0,0,0.08), transparent 70%); right:-80px; top:-80px; pointer-events:none}
+@media(min-width:860px){.banner{grid-template-columns:1.3fr .7fr; padding:28px}}
+.banner h3{font-family:'Space Grotesk',sans-serif; font-size:clamp(22px,3vw,28px); line-height:1; margin:0 0 8px; letter-spacing:-.03em}
+.banner ul{margin:10px 0 0; padding:0; list-style:none; display:grid; gap:6px}
+.banner ul li{display:flex; gap:8px; align-items:center; font-weight:700; font-size:13px}
+.banner-price{background:#08090c; color:var(--text); border-radius:20px; padding:18px; text-align:center; border:1px solid #1f232e}
+.banner-price b{font-size:28px; color:var(--accent)}
+
+/* steps */
+.steps{display:grid; gap:12px; grid-template-columns:1fr}
+@media(min-width:700px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:18px; position:relative; overflow:hidden}
+.step::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent, rgba(184,255,61,0.04)); pointer-events:none}
+.step .num{width:36px; height:36px; border-radius:999px; background:var(--accent); color:#08090c; display:grid; place-items:center; font-weight:900; font-size:14px; margin-bottom:12px}
+.step h4{margin:0 0 6px; font-size:15px}
+.step p{margin:0; color:var(--muted); font-size:13px}
+
+/* reviews */
+.reviews{display:grid; gap:12px; grid-template-columns:1fr}
+@media(min-width:800px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:12px}
+.review-head{display:flex; gap:10px; align-items:center}
+.review-head img{width:44px; height:44px; border-radius:50%; object-fit:cover; border:1px solid var(--border)}
+.quotes{margin-left:auto; color:var(--accent); opacity:.9}
+
+/* cta */
+.cta{background:var(--surface); border:1px solid var(--border); border-radius:24px; padding:24px; display:grid; gap:18px; align-items:center; position:relative; overflow:hidden}
+.cta h3{font-family:'Space Grotesk',sans-serif; font-size:clamp(22px,3vw,30px); margin:0; letter-spacing:-.03em}
+@media(min-width:860px){.cta{grid-template-columns:1.2fr .8fr; padding:28px}}
+
+/* filters */
+.filters{display:flex; gap:8px; overflow:auto; padding-bottom:6px; scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filter-chip{white-space:nowrap; padding:9px 14px; border-radius:999px; border:1px solid var(--border); background:var(--surface); font-weight:800; font-size:13px; cursor:pointer; color:var(--muted); transition:.2s}
+.filter-chip.active{background:var(--accent); color:#08090c; border-color:var(--accent)}
+
+/* product page */
+.product-layout{display:grid; gap:18px}
+@media(min-width:900px){.product-layout{grid-template-columns:1.15fr .85fr}}
+.preview{background:var(--surface); border:1px solid var(--border); border-radius:22px; overflow:hidden}
+.preview-main{aspect-ratio:1.15; background:#0f1117; position:relative}
+.preview-main img{width:100%; height:100%; object-fit:cover}
+.preview-thumbs{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; padding:10px; background:var(--surface2); border-top:1px solid var(--border)}
+.preview-thumbs img{aspect-ratio:1; border-radius:12px; border:1px solid var(--border); cursor:pointer; object-fit:cover; opacity:.7}
+.preview-thumbs img.active{opacity:1; border-color:var(--accent); outline:2px solid rgba(184,255,61,0.25)}
+.specs{display:grid; grid-template-columns:repeat(2,1fr); gap:10px}
+.spec{background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:14px}
+.spec small{color:var(--muted); font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase}
+.spec b{font-size:18px}
+
+/* formation */
+.modules{display:grid; gap:10px}
+.module{background:var(--surface); border:1px solid var(--border); border-radius:18px; overflow:hidden}
+.module-head{padding:16px 18px; display:flex; align-items:center; gap:12px; cursor:pointer; user-select:none}
+.module-head .idx{width:34px; height:34px; border-radius:999px; background:var(--surface3); border:1px solid var(--border); display:grid; place-items:center; font-weight:900; font-size:13px}
+.module-head h4{margin:0; font-size:14px; flex:1}
+.module-body{padding:0 18px 16px 64px; color:var(--muted); font-size:13px; display:none; border-top:1px dashed var(--border); margin-top:2px; padding-top:12px}
+.module.open .module-body{display:block}
+.module.open{border-color:var(--border2)}
+
+/* espace */
+.espace-grid{display:grid; gap:18px}
+@media(min-width:900px){.espace-grid{grid-template-columns:1.7fr .9fr}}
+.card{background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:18px}
+.input, .select{
+  width:100%; background:var(--surface2); border:1px solid var(--border); color:var(--text); border-radius:14px; padding:12px 14px; font-size:14px; outline:none; transition:.2s;
+}
+.input:focus, .select:focus{border-color:var(--accent); box-shadow:0 0 0 4px rgba(184,255,61,0.12)}
+.label{font-size:12px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; display:block}
+.order-row{display:grid; gap:12px; padding:14px; border:1px solid var(--border); border-radius:16px; background:var(--surface2); margin-bottom:10px}
+.order-top{display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:space-between}
+.status{padding:6px 10px; border-radius:999px; font-size:11px; font-weight:900; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--border)}
+.status.valider{background:#1a1f2a; color:#ffb02e; border-color:rgba(255,176,46,0.25)}
+.status.payee{background:rgba(184,255,61,0.14); color:var(--accent); border-color:rgba(184,255,61,0.25)}
+.status.annulee{background:rgba(255,77,77,0.12); color:#ff6b6b; border-color:rgba(255,77,77,0.22)}
+.link-box{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+.link-chip{font-size:12px; padding:8px 10px; border-radius:999px; background:var(--accent); color:#08090c; font-weight:800; display:inline-flex; gap:6px; align-items:center}
+
+/* paiement */
+.pay-grid{display:grid; gap:14px; grid-template-columns:1fr}
+@media(min-width:800px){.pay-grid{grid-template-columns:1fr 1fr}}
+.pay-card{background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:18px}
+.pay-number{font-family:'Space Grotesk',sans-serif; font-size:22px; font-weight:700; letter-spacing:.02em}
+.warning{background:rgba(255,176,46,0.1); border:1px solid rgba(255,176,46,0.22); color:#ffcc6b; padding:14px; border-radius:16px; font-size:13px; font-weight:600; display:flex; gap:10px}
+
+/* admin */
+.admin-login{max-width:420px; margin:0 auto}
+.stats{display:grid; grid-template-columns:repeat(2,1fr); gap:10px}
+@media(min-width:800px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:16px}
+.stat b{font-size:22px}
+.admin-table{width:100%; border-collapse:separate; border-spacing:0 10px}
+.admin-row{background:var(--surface); border:1px solid var(--border)}
+.admin-row td{padding:14px; border-top:1px solid var(--border); border-bottom:1px solid var(--border)}
+.admin-row td:first-child{border-left:1px solid var(--border); border-radius:14px 0 0 14px}
+.admin-row td:last-child{border-right:1px solid var(--border); border-radius:0 14px 14px 0}
+
+/* cart drawer */
+.drawer{
+  position:fixed; inset:0 0 0 auto; width:min(420px,100%); background:var(--surface); border-left:1px solid var(--border);
+  z-index:70; transform:translateX(100%); transition:.28s cubic-bezier(.22,.61,.36,1); display:flex; flex-direction:column; box-shadow:var(--shadow)
+}
+.drawer.open{transform:translateX(0)}
+.drawer-head{padding:18px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between}
+.drawer-body{flex:1; overflow:auto; padding:16px; display:flex; flex-direction:column; gap:12px}
+.drawer-foot{padding:16px; border-top:1px solid var(--border); background:var(--surface2)}
+.cart-item{display:flex; gap:12px; padding:12px; border:1px solid var(--border); border-radius:16px; background:var(--surface2)}
+.cart-item img{width:64px; height:64px; border-radius:12px; object-fit:cover; border:1px solid var(--border)}
+.qty{display:flex; align-items:center; gap:8px; margin-top:6px}
+.qty button{width:28px; height:28px; border-radius:999px; border:1px solid var(--border); background:var(--surface); cursor:pointer; display:grid; place-items:center}
+.overlay{position:fixed; inset:0; background:rgba(0,0,0,0.56); backdrop-filter:blur(4px); z-index:65; display:none}
+.overlay.show{display:block}
+
+/* whatsapp float */
+.wa-float{
+  position:fixed; right:14px; bottom:14px; z-index:60; background:#25D366; color:white; width:56px; height:56px; border-radius:50%;
+  display:grid; place-items:center; box-shadow:0 12px 30px rgba(37,211,102,0.35); border:2px solid rgba(255,255,255,0.15); transition:.2s;
+}
+.wa-float:hover{transform:translateY(-2px) scale(1.03)}
+.wa-float span{position:absolute; right:64px; background:var(--surface); border:1px solid var(--border); color:var(--text); padding:8px 10px; border-radius:999px; font-size:12px; font-weight:800; white-space:nowrap; box-shadow:var(--shadow)}
+@media(max-width:600px){.wa-float span{display:none}}
+
+/* toast */
+#toast{position:fixed; left:50%; bottom:18px; transform:translateX(-50%) translateY(80px); background:var(--text); color:#08090c; padding:12px 16px; border-radius:999px; font-weight:800; font-size:13px; box-shadow:var(--shadow); z-index:80; opacity:0; transition:.32s; display:flex; gap:10px; align-items:center; border:1px solid #fff}
+#toast.show{transform:translateX(-50%) translateY(0); opacity:1}
+
+/* footer */
+footer{margin-top:30px; border-top:1px solid var(--border); padding:22px 0; background:rgba(17,19,24,0.6)}
+.foot-grid{display:grid; gap:18px; grid-template-columns:1fr}
+@media(min-width:700px){.foot-grid{grid-template-columns:1.2fr .8fr .8fr}}
+.foot-links a{color:var(--muted); font-size:13px; display:block; padding:4px 0}
+.foot-links a:hover{color:var(--text)}
+
+/* helper */
+.hidden{display:none !important}
+.divider{height:1px; background:var(--border); margin:14px 0}
+.kbd{font-size:11px; padding:4px 7px; border-radius:6px; background:var(--surface3); border:1px solid var(--border); color:var(--muted); font-weight:700}
+.prose{color:var(--muted); font-size:14px}
+.prose b{color:var(--text)}
 </style>
 </head>
 <body>
-<div class="topbar">✨ Templates prêts à personnaliser · Formation design · Assistance WhatsApp</div>
-<header class="nav"><div class="container nav-inner"><a class="brand" href="#/">THEO<span>DESIGN</span></a><nav class="navlinks"><a href="#/boutique">Boutique</a><a href="#/formation">Formation</a><a href="#/avis">Avis</a><a href="#/client">Mon espace</a></nav><div class="nav-actions"><button class="iconbtn" onclick="openCart()">🛒 <span id="cartCount">0</span></button><button class="btn btn-primary" onclick="go('/boutique')">Découvrir</button><button class="iconbtn menu" onclick="toggleMobileNav()">☰</button></div></div></header>
-<main id="app"></main>
-<a class="whatsapp" href="https://wa.me/237670082328?text=Bonjour%20Theo%20Design%2C%20j%27ai%20besoin%20d%27aide%20pour%20un%20produit." target="_blank" rel="noopener">💬 WhatsApp</a>
-<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div id="modalBox" class="modal-box"></div></div><div id="toast" class="toast"></div>
+<!-- CSP meta (front) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https: data:; connect-src 'self' https:; font-src https://fonts.gstatic.com;">
+
+<div class="annonce">
+  <span class="dot"></span>
+  Livraison instantanée après paiement • Support WhatsApp 7j/7
+  <em>-10% avec code THEO10</em>
+</div>
+
+<nav aria-label="Navigation principale">
+  <div class="container nav-inner">
+    <a href="#/" class="logo mono" aria-label="Theo Design accueil">THEO<span style="color:#b8ff3d">DESIGN</span></a>
+    <div class="nav-links" role="navigation">
+      <a href="#/" data-nav="accueil" class="active">Accueil</a>
+      <a href="#/boutique" data-nav="boutique">Boutique</a>
+      <a href="#/formation" data-nav="formation">Formation</a>
+      <a href="#/espace" data-nav="espace">Mon espace</a>
+      <a href="#/paiement" data-nav="paiement">Paiement</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="btnCart" aria-label="Panier">
+        <i data-lucide="shopping-bag" style="width:18px;height:18px"></i>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+      <a href="#/admin" class="icon-btn" aria-label="Admin" title="Admin">
+        <i data-lucide="shield" style="width:18px;height:18px"></i>
+      </a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <i data-lucide="menu" style="width:20px;height:20px"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#/">Accueil <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+  <a href="#/boutique">Boutique <i data-lucide="store" style="width:16px;height:16px"></i></a>
+  <a href="#/formation">Formation <i data-lucide="graduation-cap" style="width:16px;height:16px"></i></a>
+  <a href="#/espace">Mon espace <i data-lucide="user" style="width:16px;height:16px"></i></a>
+  <a href="#/paiement">Paiement Mobile Money <i data-lucide="smartphone" style="width:16px;height:16px"></i></a>
+  <a href="#/admin">Admin <i data-lucide="lock" style="width:16px;height:16px"></i></a>
+  <div style="display:flex; gap:10px; margin-top:6px">
+    <a href="#/boutique" class="btn btn-primary" style="flex:1; justify-content:center">Voir la boutique</a>
+  </div>
+</div>
+
+<main class="container">
+  <!-- ACCUEIL -->
+  <section data-page="accueil" id="page-accueil">
+    <div class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><i data-lucide="sparkles" style="width:14px;height:14px"></i> Nouveau • Templates 2025 édition Cameroun</div>
+          <h1>Transforme tes idées en <i>designs qui attirent</i></h1>
+          <p class="lead">Templates Canva premium prêts à vendre + formation complète. Pour créateurs, community managers et commerces au Cameroun. Éditable en 2 clics, sans compétence.</p>
+          <div class="hero-actions">
+            <a href="#/boutique" class="btn btn-primary">Explorer la boutique <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+            <a href="#/formation" class="btn btn-ghost"><i data-lucide="play" style="width:16px;height:16px"></i> Voir la formation</a>
+          </div>
+          <div class="trust">
+            <div class="avatars">
+              <img src="https://i.pravatar.cc/100?img=32" alt="">
+              <img src="https://i.pravatar.cc/100?img=14" alt="">
+              <img src="https://i.pravatar.cc/100?img=33" alt="">
+            </div>
+            <div>
+              <div class="stars">★★★★★ <span style="color:var(--muted); font-weight:700">4.9/5 (312 avis)</span></div>
+              <div style="font-size:12px; color:var(--muted); font-weight:600">Rejoint par 1 200+ créatifs au Cameroun</div>
+            </div>
+            <span class="kbd">Paiement Mobile Money</span>
+          </div>
+        </div>
+
+        <div class="demo-wrap">
+          <div class="demo-card">
+            <div class="demo-top">
+              <div style="display:flex; align-items:center; gap:8px; font-weight:800; font-size:13px"><span style="width:28px;height:28px; border-radius:999px; background:var(--accent); display:grid; place-items:center; color:#08090c"><i data-lucide="layout" style="width:14px;height:14px"></i></span> Aperçu Canva • Pack Business</div>
+              <span style="font-size:11px; font-weight:800; background:#08090c; color:var(--accent); padding:6px 10px; border-radius:999px; border:1px solid var(--border)">Éditable</span>
+            </div>
+            <div class="demo-grid">
+              <div class="tpl"><img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&q=80" alt=""><span class="label">Promo -50%</span></div>
+              <div class="tpl"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb4?w=600&q=80" alt=""><span class="label">Menu Restaurant</span></div>
+              <div class="tpl"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80" alt=""><span class="label">Mode & Beauté</span></div>
+              <div class="tpl"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80" alt=""><span class="label">Story WhatsApp</span></div>
+            </div>
+            <div style="padding:12px 16px; display:flex; gap:10px; align-items:center; border-top:1px solid var(--border); background:var(--surface2)">
+              <span style="font-weight:900; font-size:13px">100 templates</span><span style="width:4px;height:4px; background:var(--muted); border-radius:50%"></span><span style="color:var(--muted); font-weight:700; font-size:13px">Canva • PSD • PNG</span>
+              <span style="margin-left:auto; background:var(--accent); color:#08090c; padding:6px 10px; border-radius:999px; font-weight:900; font-size:12px">15 000 FCFA</span>
+            </div>
+          </div>
+          <div class="float-pill pill-a"><span style="width:22px;height:22px; border-radius:50%; background:#08090c; color:var(--accent); display:grid; place-items:center"><i data-lucide="check" style="width:12px;height:12px"></i></span> 100 Templates <small>• Pack complet</small></div>
+          <div class="float-pill pill-b"><i data-lucide="zap" style="width:14px;height:14px; color:#0a0c0a"></i> Livraison instantanée</div>
+          <div class="float-pill accent pill-c"><i data-lucide="smartphone" style="width:14px;height:14px"></i> Canva • PSD • PNG</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avantages -->
+    <div class="section">
+      <div class="advantages">
+        <div class="adv-card">
+          <div class="adv-icon"><i data-lucide="download" style="width:18px;height:18px"></i></div>
+          <div><b style="display:block; font-size:15px">Livraison instantanée</b><span style="color:var(--muted); font-size:13px">Accès immédiat après validation Mobile Money. Lien Canva + fichiers.</span></div>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon"><i data-lucide="palette" style="width:18px;height:18px"></i></div>
+          <div><b style="display:block; font-size:15px">100% éditable sur Canva</b><span style="color:var(--muted); font-size:13px">Change couleurs, textes, photos en 2 clics. Même sur téléphone.</span></div>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon"><i data-lucide="message-circle" style="width:18px;height:18px"></i></div>
+          <div><b style="display:block; font-size:15px">Support WhatsApp 7j/7</b><span style="color:var(--muted); font-size:13px">On t’aide à installer et personnaliser. Réponse en &lt; 2h.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="section">
+      <div class="section-head">
+        <div><div class="kicker">Catégories</div><h2>Choisis ton univers</h2></div>
+        <a href="#/boutique" class="btn btn-ghost" style="padding:8px 14px; font-size:13px">Voir tout <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+      </div>
+      <div class="cats" id="catsHome"></div>
+    </div>
+
+    <!-- Produits phares -->
+    <div class="section">
+      <div class="section-head">
+        <div><div class="kicker">Boutique</div><h2>Produits phares</h2><p>Les packs les plus vendus au Cameroun ce mois-ci</p></div>
+        <a href="#/boutique" class="btn btn-primary" style="padding:10px 16px">Voir la boutique</a>
+      </div>
+      <div class="grid" id="featuredGrid"></div>
+    </div>
+
+    <!-- Banniere formation -->
+    <div class="section">
+      <div class="banner">
+        <div>
+          <div style="display:inline-flex; gap:8px; align-items:center; background:#08090c; color:var(--accent); padding:6px 10px; border-radius:999px; font-size:12px; font-weight:900; letter-spacing:.06em"><i data-lucide="graduation-cap" style="width:14px;height:14px"></i> FORMATION COMPLÈTE</div>
+          <h3>Deviens designer pro en 30 jours, même sans base</h3>
+          <p style="margin:0; font-weight:600; opacity:.8; font-size:14px">Canva + Photoshop + Identité visuelle + Clients. 8 modules, 42 vidéos, certificats, groupe privé.</p>
+          <ul>
+            <li><span style="width:20px;height:20px; border-radius:50%; background:#08090c; color:var(--accent); display:grid; place-items:center"><i data-lucide="check" style="width:12px;height:12px"></i></span> Accès à vie + mises à jour</li>
+            <li><span style="width:20px;height:20px; border-radius:50%; background:#08090c; color:var(--accent); display:grid; place-items:center"><i data-lucide="check" style="width:12px;height:12px"></i></span> Bonus : 200 templates + contrats clients</li>
+            <li><span style="width:20px;height:20px; border-radius:50%; background:#08090c; color:var(--accent); display:grid; place-items:center"><i data-lucide="check" style="width:12px;height:12px"></i></span> Support WhatsApp direct avec Théo</li>
+          </ul>
+        </div>
+        <div class="banner-price">
+          <div style="font-size:12px; font-weight:800; letter-spacing:.12em; opacity:.7">PRIX FORMATION</div>
+          <div style="display:flex; align-items:end; justify-content:center; gap:8px; margin:8px 0"><b>49 900</b><span style="font-weight:800; opacity:.7; margin-bottom:6px">FCFA</span></div>
+          <div style="text-decoration:line-through; opacity:.6; font-weight:700; font-size:13px">79 900 FCFA</div>
+          <a href="#/formation" class="btn btn-primary" style="width:100%; margin-top:14px">Voir le programme <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+          <div style="font-size:11px; font-weight:700; opacity:.6; margin-top:8px">Paiement en 2 fois possible via Mobile Money</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Etapes -->
+    <div class="section">
+      <div class="kicker">Comment ça marche</div>
+      <h2 style="margin:0 0 14px">4 étapes, et tu vends</h2>
+      <div class="steps">
+        <div class="step"><div class="num">01</div><h4>Découvre</h4><p>Choisis le pack qui correspond à ton business.</p></div>
+        <div class="step"><div class="num">02</div><h4>Achète</h4><p>Paie via MTN MoMo ou Orange Money en 30s.</p></div>
+        <div class="step"><div class="num">03</div><h4>Reçois</h4><p>Tu reçois le lien Canva + fichiers par WhatsApp.</p></div>
+        <div class="step"><div class="num">04</div><h4>Crée & vends</h4><p>Personnalise et vends à tes clients dès aujourd’hui.</p></div>
+      </div>
+    </div>
+
+    <!-- Avis -->
+    <div class="section">
+      <div class="section-head"><div><div class="kicker">Avis vérifiés</div><h2>Ils ont transformé leur business</h2></div><span class="kbd">312 avis • 4.9/5</span></div>
+      <div class="reviews">
+        <div class="review">
+          <div class="review-head"><img src="https://i.pravatar.cc/100?img=5" alt=""><div><b style="font-size:14px; display:block">A. Marie • Douala</b><span style="color:var(--muted); font-size:12px; font-weight:700">Salon de coiffure</span></div><span class="quotes"><i data-lucide="quote" style="width:20px;height:20px"></i></span></div>
+          <div style="color:#ffb02e; font-size:13px">★★★★★</div>
+          <p style="margin:0; color:var(--muted); font-size:13px">“Pack Coiffeurs au top ! J’ai fait mes affiches en 10 minutes et mes clientes adorent. Rentabilisé en 2 jours.”</p>
+        </div>
+        <div class="review">
+          <div class="review-head"><img src="https://i.pravatar.cc/100?img=12" alt=""><div><b style="font-size:14px; display:block">Junior K. • Yaoundé</b><span style="color:var(--muted); font-size:12px; font-weight:700">Restaurant</span></div><span class="quotes"><i data-lucide="quote" style="width:20px;height:20px"></i></span></div>
+          <div style="color:#ffb02e; font-size:13px">★★★★★</div>
+          <p style="margin:0; color:var(--muted); font-size:13px">“Pack Restaurants magnifique. Menu + promos WhatsApp, tout est prêt. Support ultra rapide.”</p>
+        </div>
+        <div class="review">
+          <div class="review-head"><img src="https://i.pravatar.cc/100?img=26" alt=""><div><b style="font-size:14px; display:block">Fatima B. • Bafoussam</b><span style="color:var(--muted); font-size:12px; font-weight:700">Boutique Mode</span></div><span class="quotes"><i data-lucide="quote" style="width:20px;height:20px"></i></span></div>
+          <div style="color:#ffb02e; font-size:13px">★★★★★</div>
+          <p style="margin:0; color:var(--muted); font-size:13px">“Formation + Pack Mode = combo parfait. Je crée maintenant pour mes clientes et je facture 15k/design.”</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="cta">
+        <div><h3>Prêt à passer au niveau supérieur ?</h3><p style="color:var(--muted); margin:8px 0 0; font-size:14px">Rejoins 1 200+ entrepreneurs qui vendent mieux grâce au design. Paiement Mobile Money sécurisé.</p></div>
+        <div style="display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap">
+          <a href="#/boutique" class="btn btn-primary">Commencer maintenant</a>
+          <a href="https://wa.me/237670082328" target="_blank" rel="noopener noreferrer" class="btn btn-ghost"><i data-lucide="message-circle" style="width:16px;height:16px"></i> Parler sur WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOUTIQUE -->
+  <section data-page="boutique" id="page-boutique" class="hidden">
+    <div class="section">
+      <div class="kicker">Boutique • 6 packs + Formation</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif; font-size:32px; margin:0; letter-spacing:-.03em">Tous les templates</h2>
+      <p style="color:var(--muted); max-width:640px">Filtre par catégorie, ajoute au panier et paie via Mobile Money. Livraison instantanée après validation.</p>
+      <div class="filters" id="filters" style="margin-top:14px"></div>
+      <div class="grid" id="boutiqueGrid" style="margin-top:16px"></div>
+    </div>
+  </section>
+
+  <!-- PRODUIT -->
+  <section data-page="produit" id="page-produit" class="hidden">
+    <div class="section">
+      <a href="#/boutique" class="btn btn-ghost" style="padding:8px 12px; font-size:13px"><i data-lucide="arrow-left" style="width:14px;height:14px"></i> Retour boutique</a>
+      <div class="product-layout" style="margin-top:16px">
+        <div class="preview" id="productPreview"></div>
+        <div>
+          <div id="productInfo"></div>
+          <div class="card" style="margin-top:14px">
+            <b style="font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)">Contenu reçu</b>
+            <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); font-size:13px; display:grid; gap:6px">
+              <li>Lien Canva éditable (accès à vie)</li>
+              <li>Fichiers PNG + PSD sources</li>
+              <li>Guide d’édition PDF + vidéos</li>
+              <li>Polices & mockups inclus</li>
+              <li>Licence commerciale (revends à tes clients)</li>
+            </ul>
+          </div>
+          <div class="card" style="margin-top:12px; display:flex; gap:8px; align-items:center; background:var(--accent-soft); border-color:rgba(184,255,61,0.18)">
+            <i data-lucide="shield-check" style="width:18px;height:18px; color:var(--accent)"></i><span style="font-size:13px; font-weight:700">Paiement 100% sécurisé • Ne partage jamais ton code PIN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section data-page="formation" id="page-formation" class="hidden">
+    <div class="section">
+      <div style="display:grid; gap:18px; align-items:start">
+        <div class="banner" style="margin:0">
+          <div>
+            <div style="display:inline-flex; gap:8px; align-items:center; background:#08090c; color:var(--accent); padding:6px 10px; border-radius:999px; font-size:11px; font-weight:900; letter-spacing:.1em">FORMATION CERTIFIANTE • 8 MODULES</div>
+            <h2 style="font-family:'Space Grotesk',sans-serif; font-size:clamp(26px,4vw,36px); line-height:.95; margin:10px 0">Maîtrise le design graphique et trouve tes premiers clients</h2>
+            <p style="opacity:.8; font-weight:600; font-size:14px">42 vidéos • 18h • Exercices corrigés • Groupe WhatsApp privé • Certificat</p>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px">
+              <span class="kbd" style="background:#08090c; color:var(--text); border-color:#1f232e"><i data-lucide="video" style="width:12px;height:12px"></i> 42 leçons</span>
+              <span class="kbd" style="background:#08090c; color:var(--text); border-color:#1f232e"><i data-lucide="award" style="width:12px;height:12px"></i> Certificat</span>
+              <span class="kbd" style="background:#08090c; color:var(--text); border-color:#1f232e"><i data-lucide="infinity" style="width:12px;height:12px"></i> Accès à vie</span>
+            </div>
+          </div>
+          <div class="banner-price">
+            <div style="font-size:12px; font-weight:800; letter-spacing:.12em; opacity:.7">FORMATION COMPLÈTE</div>
+            <div style="display:flex; align-items:end; justify-content:center; gap:8px; margin:8px 0"><b>49 900</b><span style="font-weight:800; opacity:.7; margin-bottom:6px">FCFA</span></div>
+            <div style="text-decoration:line-through; opacity:.6; font-weight:700; font-size:13px">79 900 FCFA</div>
+            <button class="btn btn-primary" style="width:100%; margin-top:14px" onclick="addFormationToCart()"><i data-lucide="shopping-bag" style="width:16px;height:16px"></i> Ajouter au panier</button>
+            <div style="font-size:11px; font-weight:700; opacity:.6; margin-top:8px">Bonus inclus (valeur 35 000 FCFA)</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid; gap:14px; margin-top:18px; grid-template-columns:1fr">
+        <div class="espace-grid" style="align-items:start">
+          <div>
+            <h3 style="margin:0 0 10px; font-family:'Space Grotesk',sans-serif">Programme détaillé</h3>
+            <div class="modules" id="modulesList"></div>
+          </div>
+          <div style="display:grid; gap:12px">
+            <div class="card" style="background:linear-gradient(180deg, var(--surface) 0%, var(--surface2) 100%)">
+              <b><i data-lucide="gift" style="width:16px;height:16px; color:var(--accent)"></i> Bonus inclus</b>
+              <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); font-size:13px; display:grid; gap:6px">
+                <li>200 templates Canva supplémentaires</li>
+                <li>Contrats & devis clients (Word)</li>
+                <li>Pack mockups iPhone & Instagram</li>
+                <li>Liste de 50 idées de contenu</li>
+                <li>Accès groupe WhatsApp privé</li>
+              </ul>
+              <div class="divider"></div>
+              <div style="display:flex; gap:8px; align-items:center"><img src="https://i.pravatar.cc/100?img=15" style="width:36px;height:36px; border-radius:50%; border:1px solid var(--border)" alt=""><div><b style="font-size:13px">Théo — Formateur</b><div style="font-size:12px; color:var(--muted)">Designer depuis 6 ans • 800+ élèves</div></div></div>
+            </div>
+            <div class="card">
+              <b>Prérequis</b><p style="color:var(--muted); font-size:13px; margin:6px 0 0">Aucun. Téléphone ou ordinateur + Canva gratuit. On part de zéro.</p>
+              <div class="divider"></div>
+              <b>Garantie</b><p style="color:var(--muted); font-size:13px; margin:6px 0 0">Satisfait ou remboursé 7 jours après achat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPACE -->
+  <section data-page="espace" id="page-espace" class="hidden">
+    <div class="section">
+      <div class="kicker">Mon espace</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif; font-size:30px; margin:0">Tes commandes & téléchargements</h2>
+      <p style="color:var(--muted); font-size:14px">Les liens de livraison s’affichent uniquement pour les commandes <b style="color:var(--accent)">Payée</b>. Statuts : À valider, Payée, Annulée.</p>
+
+      <div class="espace-grid" style="margin-top:16px">
+        <div>
+          <div id="ordersList"></div>
+          <div id="emptyOrders" class="card hidden" style="text-align:center; padding:28px">
+            <div style="width:56px;height:56px; border-radius:50%; background:var(--surface2); border:1px solid var(--border); display:grid; place-items:center; margin:0 auto 10px"><i data-lucide="package" style="width:20px;height:20px"></i></div>
+            <b>Aucune commande pour le moment</b><p style="color:var(--muted); font-size:13px">Passe ta première commande et retrouve-la ici.</p>
+            <a href="#/boutique" class="btn btn-primary" style="margin-top:8px">Aller à la boutique</a>
+          </div>
+        </div>
+
+        <div style="display:grid; gap:12px; align-content:start">
+          <div class="card">
+            <b><i data-lucide="search" style="width:14px;height:14px"></i> Retrouver une commande</b>
+            <p style="color:var(--muted); font-size:12px; margin:6px 0 10px">Entre ton numéro de commande et ton code secret reçu après paiement.</p>
+            <label class="label">Numéro de commande</label>
+            <input id="trackNumber" class="input" placeholder="Ex: TD-4829">
+            <label class="label" style="margin-top:10px">Code secret</label>
+            <input id="trackCode" class="input" placeholder="Ex: 8392" maxlength="6">
+            <button class="btn btn-dark" style="width:100%; margin-top:12px" onclick="trackOrder()"><i data-lucide="eye" style="width:16px;height:16px"></i> Voir ma commande</button>
+            <div id="trackResult" style="margin-top:12px"></div>
+          </div>
+          <div class="card" style="background:var(--accent-soft); border-color:rgba(184,255,61,0.18)">
+            <b style="display:flex; gap:8px; align-items:center"><i data-lucide="help-circle" style="width:16px;height:16px; color:var(--accent)"></i> Besoin d’aide ?</b>
+            <p style="color:var(--muted); font-size:13px; margin:6px 0 10px">Contacte-nous sur WhatsApp, on te répond sous 2h.</p>
+            <a href="https://wa.me/237670082328" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="width:100%; justify-content:center"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp : 670 08 23 28</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIEMENT -->
+  <section data-page="paiement" id="page-paiement" class="hidden">
+    <div class="section">
+      <div class="kicker">Paiement sécurisé • Cameroun</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif; font-size:30px; margin:0">Payer par Mobile Money</h2>
+      <p style="color:var(--muted); max-width:700px">Choisis ton opérateur, envoie le montant exact et garde la capture d’écran. Tu l’enverras sur WhatsApp après validation.</p>
+
+      <div class="warning" style="margin-top:14px"><i data-lucide="alert-triangle" style="width:18px;height:18px; flex-shrink:0"></i><div><b>⚠️ Ne saisis JAMAIS ton code PIN sur un site internet.</b> Tu paies uniquement via ton menu USSD (*126# pour MTN, #150# pour Orange) ou ton application. Theo Design ne te demandera jamais ton code PIN.</div></div>
+
+      <div class="pay-grid" style="margin-top:16px">
+        <div class="pay-card" style="border-color:rgba(255,204,0,0.22)">
+          <div style="display:flex; gap:10px; align-items:center"><span style="width:44px;height:44px; border-radius:12px; background:#ffcc00; display:grid; place-items:center; color:#08090c; font-weight:900">MTN</span><div><b>MTN Mobile Money</b><div style="font-size:12px; color:var(--muted); font-weight:700">670 26 78 51 • Théo Design</div></div></div>
+          <div class="pay-number" style="margin:14px 0 6px">670 26 78 51</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <button class="btn btn-primary" style="flex:1" onclick="copyToClipboard('670267851')"><i data-lucide="copy" style="width:14px;height:14px"></i> Copier</button>
+            <a href="tel:*126%23" class="btn btn-ghost" style="flex:1">Composer *126#</a>
+          </div>
+        </div>
+        <div class="pay-card" style="border-color:rgba(255,107,0,0.22)">
+          <div style="display:flex; gap:10px; align-items:center"><span style="width:44px;height:44px; border-radius:12px; background:#ff6b00; display:grid; place-items:center; color:white; font-weight:900">OM</span><div><b>Orange Money</b><div style="font-size:12px; color:var(--muted); font-weight:700">689 04 28 63 • Théo Design</div></div></div>
+          <div class="pay-number" style="margin:14px 0 6px">689 04 28 63</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap">
+            <button class="btn btn-primary" style="flex:1" onclick="copyToClipboard('689042863')"><i data-lucide="copy" style="width:14px;height:14px"></i> Copier</button>
+            <a href="tel:%23150%23" class="btn btn-ghost" style="flex:1">Composer #150#</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <b>Comment payer ?</b>
+        <ol style="margin:10px 0 0; padding-left:18px; color:var(--muted); font-size:13px; display:grid; gap:6px; font-weight:600">
+          <li>Ajoute tes packs au panier puis valide la commande (tu obtiens un <b style="color:var(--text)">numéro + code secret</b>).</li>
+          <li>Va dans ton menu Mobile Money et envoie le <b style="color:var(--text)">montant exact</b> au numéro ci-dessus.</li>
+          <li>Fais une capture d’écran du SMS de confirmation.</li>
+          <li>Clique sur <b style="color:var(--text)">“Envoyer la preuve sur WhatsApp”</b> depuis Mon espace — message pré-rempli.</li>
+        </ol>
+        <div class="divider"></div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <a href="#/boutique" class="btn btn-primary">Voir la boutique</a>
+          <a href="#/espace" class="btn btn-ghost">Aller à Mon espace</a>
+        </div>
+      </div>
+
+      <!-- Checkout form -->
+      <div class="card" id="checkoutCard" style="margin-top:14px">
+        <h3 style="margin:0; font-family:'Space Grotesk',sans-serif">Finaliser la commande</h3>
+        <p style="color:var(--muted); font-size:13px; margin:6px 0 14px">Remplis tes infos, choisis ton moyen de paiement et reçois ton numéro de suivi.</p>
+        <form id="checkoutForm" onsubmit="submitCheckout(event)" novalidate>
+          <div style="display:grid; gap:12px; grid-template-columns:1fr">
+            <div style="display:grid; gap:12px; grid-template-columns:1fr 1fr">
+              <div><label class="label">Nom complet *</label><input id="cName" class="input" placeholder="Ex: Théo Kamga" required></div>
+              <div><label class="label">Téléphone *</label><input id="cPhone" class="input" placeholder="6xx xxx xxx" required></div>
+            </div>
+            <div><label class="label">Email *</label><input id="cEmail" class="input" type="email" placeholder="theo@email.com" required></div>
+            <div>
+              <label class="label">Moyen de paiement *</label>
+              <select id="cPay" class="select" required>
+                <option value="">Choisir</option>
+                <option value="MTN MoMo - 670 26 78 51">MTN MoMo - 670 26 78 51</option>
+                <option value="Orange Money - 689 04 28 63">Orange Money - 689 04 28 63</option>
+              </select>
+            </div>
+            <div id="cartSummary" style="background:var(--surface2); border:1px dashed var(--border); border-radius:16px; padding:14px"></div>
+            <button type="submit" class="btn btn-primary" style="width:100%; padding:14px; font-size:15px"><i data-lucide="lock" style="width:16px;height:16px"></i> Valider la commande</button>
+            <div style="font-size:11px; color:var(--muted); text-align:center; font-weight:600">En validant, tu obtiens ton numéro de commande + code secret. Paiement à faire ensuite via USSD.</div>
+          </div>
+        </form>
+        <div id="checkoutSuccess" class="hidden" style="text-align:center; padding:18px; background:var(--surface2); border:1px solid var(--border); border-radius:16px; margin-top:12px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMIN -->
+  <section data-page="admin" id="page-admin" class="hidden">
+    <div class="section" id="adminLoginWrap">
+      <div class="admin-login card">
+        <div style="text-align:center; margin-bottom:14px"><div style="width:48px;height:48px; border-radius:14px; background:var(--accent); color:#08090c; display:grid; place-items:center; margin:0 auto 10px"><i data-lucide="shield" style="width:20px;height:20px"></i></div><h3 style="margin:0; font-family:'Space Grotesk',sans-serif">Espace Admin</h3><p style="color:var(--muted); font-size:13px; margin:6px 0 0">Connexion sécurisée • scrypt + HttpOnly + CSRF</p></div>
+        <form onsubmit="adminLogin(event)">
+          <label class="label">Email admin</label><input id="aEmail" class="input" type="email" placeholder="admin@theodesign.cm" required value="admin@theodesign.cm">
+          <label class="label" style="margin-top:10px">Mot de passe</label><input id="aPass" class="input" type="password" placeholder="••••••••" required value="Admin123!">
+          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:14px"><i data-lucide="log-in" style="width:16px;height:16px"></i> Se connecter</button>
+          <div style="font-size:11px; color:var(--muted); margin-top:8px; text-align:center">Démo : admin@theodesign.cm / Admin123!</div>
+        </form>
+      </div>
+    </div>
+
+    <div class="section hidden" id="adminDash">
+      <div style="display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap">
+        <div><div class="kicker">Admin • Theo Design</div><h2 style="margin:0; font-family:'Space Grotesk',sans-serif">Tableau de bord</h2></div>
+        <button class="btn btn-ghost" onclick="adminLogout()"><i data-lucide="log-out" style="width:16px;height:16px"></i> Déconnexion</button>
+      </div>
+      <div class="stats" style="margin-top:16px">
+        <div class="stat"><small style="color:var(--muted); font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:11px">Commandes totales</small><b id="statTotal" style="display:block; margin-top:4px">0</b></div>
+        <div class="stat"><small style="color:var(--muted); font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:11px">À valider</small><b id="statPending" style="display:block; margin-top:4px; color:#ffb02e">0</b></div>
+        <div class="stat"><small style="color:var(--muted); font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:11px">Payées</small><b id="statPaid" style="display:block; margin-top:4px; color:var(--accent)">0</b></div>
+        <div class="stat"><small style="color:var(--muted); font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:11px">Chiffre d’affaires</small><b id="statRevenue" style="display:block; margin-top:4px">0 FCFA</b></div>
+      </div>
+
+      <div class="card" style="margin-top:16px; overflow:auto">
+        <b>Commandes récentes</b><p style="color:var(--muted); font-size:12px; margin:4px 0 0">Valide ou annule, puis enregistre le lien de livraison pour chaque produit (visible uniquement si Payée).</p>
+        <div style="min-width:760px; margin-top:12px">
+          <table class="admin-table" style="width:100%">
+            <thead><tr style="color:var(--muted); font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase"><th style="text-align:left; padding:8px">Commande</th><th style="text-align:left; padding:8px">Client</th><th style="text-align:left; padding:8px">Total</th><th style="text-align:left; padding:8px">Statut</th><th style="text-align:left; padding:8px">Livraison</th><th style="text-align:right; padding:8px">Actions</th></tr></thead>
+            <tbody id="adminTbody"></tbody>
+          </table>
+          <div id="adminEmpty" style="text-align:center; padding:22px; color:var(--muted); font-weight:700" class="hidden">Aucune commande.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Drawer Panier -->
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<aside class="drawer" id="cartDrawer" aria-hidden="true" role="dialog" aria-label="Panier">
+  <div class="drawer-head">
+    <b style="display:flex; gap:8px; align-items:center"><i data-lucide="shopping-bag" style="width:18px;height:18px"></i> Panier • <span id="drawerCount">0</span> article(s)</b>
+    <button class="icon-btn" onclick="closeCart()" aria-label="Fermer" style="width:36px;height:36px"><i data-lucide="x" style="width:16px;height:16px"></i></button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot">
+    <div style="display:flex; justify-content:space-between; font-weight:900; margin-bottom:10px"><span>Total</span><span id="drawerTotal">0 FCFA</span></div>
+    <div style="display:grid; gap:8px">
+      <a href="#/paiement" onclick="closeCart()" class="btn btn-primary" style="width:100%; justify-content:center">Passer commande <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+      <button class="btn btn-ghost" style="width:100%" onclick="clearCart()">Vider le panier</button>
+    </div>
+    <div style="font-size:11px; color:var(--muted); text-align:center; margin-top:8px; font-weight:600">Paiement Mobile Money • Livraison instantanée</div>
+  </div>
+</aside>
+
+<a class="wa-float" href="https://wa.me/237670082328?text=Bonjour%20Theo%20Design%20%F0%9F%91%8B%20Je%20souhaite%20des%20infos%20sur%20vos%20packs%20Canva" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <span>Besoin d’aide ?</span>
+  <i data-lucide="message-circle" style="width:26px;height:26px; fill:white"></i>
+</a>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo mono" style="font-size:16px">THEO<span style="color:#b8ff3d">DESIGN</span></div>
+        <p style="color:var(--muted); font-size:13px; margin:8px 0 0; max-width:420px">Templates Canva premium et formation design graphique pour entrepreneurs camerounais. Éditable sur téléphone, livraison instantanée, support 7j/7.</p>
+        <div style="display:flex; gap:8px; margin-top:12px">
+          <a href="https://wa.me/237670082328" target="_blank" rel="noopener noreferrer" class="icon-btn" style="width:36px;height:36px"><i data-lucide="message-circle" style="width:16px;height:16px"></i></a>
+          <a href="#" class="icon-btn" style="width:36px;height:36px"><i data-lucide="instagram" style="width:16px;height:16px"></i></a>
+          <a href="#" class="icon-btn" style="width:36px;height:36px"><i data-lucide="facebook" style="width:16px;height:16px"></i></a>
+        </div>
+      </div>
+      <div class="foot-links">
+        <b style="font-size:13px">Navigation</b>
+        <a href="#/">Accueil</a><a href="#/boutique">Boutique</a><a href="#/formation">Formation</a><a href="#/espace">Mon espace</a><a href="#/paiement">Paiement</a>
+      </div>
+      <div class="foot-links">
+        <b style="font-size:13px">Légal & Aide</b>
+        <a href="#">CGV</a><a href="#">Mentions légales</a><a href="#">Support WhatsApp</a><a href="mailto:contact@theodesign.cm">contact@theodesign.cm</a>
+        <div style="margin-top:10px; font-size:12px; color:var(--muted); font-weight:700">© 2025 Theo Design • Cameroun<br>MTN MoMo 670 26 78 51 • OM 689 04 28 63</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 <script>
-const PRODUCTS=[
-{id:'business',name:'Pack Business WhatsApp & Facebook',desc:'100 templates prêts à personnaliser pour petits commerces et entrepreneurs.',price:15000,badge:'Best-seller',cats:['Business','WhatsApp','Facebook'],count:100,format:'1080 × 1080 px',software:'Canva'},
-{id:'restaurants',name:'Pack Restaurants & Snacks',desc:'Menus, promotions, événements et publications pour restaurants et snacks.',price:12000,badge:'Nouveau',cats:['Restaurants','Promotions','Facebook'],count:80,format:'1080 × 1350 px',software:'Canva'},
-{id:'barbers',name:'Pack Coiffeurs & Barbiers',desc:'Designs prêts à personnaliser pour attirer plus de clients.',price:10000,badge:'',cats:['Business','Beauté','Instagram'],count:70,format:'1080 × 1080 px',software:'Canva'},
-{id:'beauty',name:'Pack Mode & Beauté',desc:'Templates élégants pour boutiques, maquilleurs et professionnels de la beauté.',price:14000,badge:'Best-seller',cats:['Mode','Beauté','Instagram'],count:90,format:'1080 × 1350 px',software:'Canva'},
-{id:'promo',name:'Pack Promotions & Soldes',desc:'Une collection de visuels commerciaux pour campagnes, offres et réductions.',price:9000,badge:'',cats:['Promotions','Facebook','WhatsApp'],count:60,format:'1080 × 1080 px',software:'Canva'},
-{id:'stories',name:'Pack Stories WhatsApp',desc:'50 stories verticales conçues pour vendre chaque jour.',price:7500,badge:'Nouveau',cats:['WhatsApp','Instagram'],count:50,format:'1080 × 1920 px',software:'Canva'}
+// ---------- data ----------
+const PRODUCTS = [
+  {id:1, name:"Pack Business WhatsApp & Facebook", price:15000, templates:100, format:"Canva + PSD + PNG", level:"Débutant", cat:["Business","WhatsApp","Facebook"], img:"https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80", badge:"Best-seller", tags:["Instagram","Facebook","WhatsApp","Business"]},
+  {id:2, name:"Pack Restaurants & Snacks", price:12000, templates:80, format:"Canva + PNG", level:"Débutant", cat:["Restaurants","Business"], img:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80", badge:"Nouveau", tags:["Restaurants","Business"]},
+  {id:3, name:"Pack Coiffeurs & Barbiers", price:10000, templates:70, format:"Canva + PSD", level:"Débutant", cat:["Beauté","Business"], img:"https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80", badge:"Promo", tags:["Beauté","Business"]},
+  {id:4, name:"Pack Mode & Beauté", price:14000, templates:90, format:"Canva + PSD + PNG", level:"Intermédiaire", cat:["Mode","Beauté"], img:"https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80", badge:"Tendance", tags:["Mode","Beauté"]},
+  {id:5, name:"Pack Promotions & Soldes", price:9000, templates:60, format:"Canva + PNG", level:"Débutant", cat:["Promotions","Business"], img:"https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80", badge:"Petit prix", tags:["Promotions","Business"]},
+  {id:6, name:"Pack Stories WhatsApp", price:7500, templates:50, format:"Canva + PNG", level:"Débutant", cat:["WhatsApp","Instagram"], img:"https://images.unsplash.com/photo-1611162616805-ca93a385e196?w=800&q=80", badge:"Stories", tags:["WhatsApp","Instagram"]},
 ];
-const testimonials=[['Mireille','M','★★★★★','Les templates m’ont permis de publier régulièrement sans repartir de zéro.'],['Junior','J','★★★★★','La présentation est claire et les fichiers sont faciles à modifier.'],['Sandra','S','★★★★★','J’ai surtout apprécié le côté pratique et les modèles orientés business.']];
-const state={cart:JSON.parse(localStorage.getItem('td_cart')||'[]'),orders:JSON.parse(localStorage.getItem('td_orders')||'[]'),user:JSON.parse(localStorage.getItem('td_user')||'null'),admin:localStorage.getItem('td_admin')==='1'};
-function save(){localStorage.setItem('td_cart',JSON.stringify(state.cart));localStorage.setItem('td_orders',JSON.stringify(state.orders));localStorage.setItem('td_user',JSON.stringify(state.user));updateCart()}
-function money(n){return new Intl.NumberFormat('fr-FR').format(n)+' FCFA'}
-function go(path){location.hash=path}
-function productMock(p,i=0){return `<div class="preview"><div class="mock ${i%2?'dark':''}"><div class="bar"></div><h4>${p.name.split(' ').slice(0,3).join(' ')}</h4><p>THEO DESIGN · TEMPLATE PROFESSIONNEL</p><div style="margin-top:22px;height:45px;border-radius:8px;background:${i%2?'#232730':'#ddd'}"></div></div>${p.badge?`<span class="badge">${p.badge}</span>`:''}</div>`}
-function card(p,i){return `<article class="card">${productMock(p,i)}<div class="card-body"><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${money(p.price)}</div><div class="card-actions"><button class="btn btn-ghost" onclick="go('/produit/${p.id}')">Détails</button><button class="btn btn-primary" onclick="addToCart('${p.id}')">Acheter</button></div></div></article>`}
-function home(){return `<section class="hero hero-pro"><div class="container hero-grid"><div class="hero-copy"><span class="eyebrow"><span class="dot"></span> THEO DESIGN · CRÉER · APPRENDRE · VENDRE</span><h1>Transforme tes idées en <em>designs qui attirent.</em></h1><p>Des templates professionnels prêts à personnaliser et une formation pratique pour apprendre le design graphique, développer ton portfolio et vendre tes compétences.</p><div class="hero-actions"><button class="btn btn-primary" onclick="go('/boutique')">Découvrir les designs →</button><button class="btn btn-ghost" onclick="go('/formation')">Commencer la formation</button></div><div class="trust"><span>✓ <b>Templates prêts à l’emploi</b></span><span>✓ <b>Compatible Canva</b></span><span>✓ <b>Paiement local</b></span><span>✓ <b>Assistance WhatsApp</b></span></div></div><div class="hero-showcase"><div class="showcase-glow"></div><div class="showcase-card showcase-main"><div class="showcase-top"><span>THEO DESIGN</span><span>01 / 04</span></div><div class="showcase-label">PACK BUSINESS</div><strong>Ton contenu mérite<br>un design professionnel.</strong><div class="showcase-lines"><i></i><i></i><i></i></div><div class="showcase-price">Prêt à personnaliser</div></div><div class="floating-card fc-one"><b>+450</b><span>templates</span></div><div class="floating-card fc-two"><b>8 modules</b><span>formation complète</span></div></div></div></section>
-<section class="section section-soft"><div class="container"><div class="section-head"><div><span class="eyebrow">Pourquoi Theo Design ?</span><h2>Tout pour créer plus vite et vendre mieux.</h2></div><p>Un écosystème simple : tu choisis un design, tu le personnalises et tu publies. Ou tu apprends à créer toi-même.</p></div><div class="benefits"><div class="benefit"><div class="benefit-icon">01</div><h3>Gagne du temps</h3><p>Pars d’une base professionnelle au lieu de créer chaque visuel depuis zéro.</p></div><div class="benefit"><div class="benefit-icon">02</div><h3>Soigne ton image</h3><p>Des compositions pensées pour les réseaux sociaux, les commerces et les entrepreneurs.</p></div><div class="benefit"><div class="benefit-icon">03</div><h3>Développe une compétence</h3><p>Apprends Canva, Photoshop, le branding et la vente de services dans un parcours structuré.</p></div></div></div></section>
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Explorer</span><h2>Choisis ton univers.</h2></div><button class="btn btn-ghost" onclick="go('/boutique')">Voir la boutique →</button></div><div class="categories">${['Templates Canva','Affiches','Flyers','Facebook & Instagram','Stories WhatsApp','Logos','Packs entreprises','Promotions'].map((x,i)=>`<div class="cat"><small>0${i+1}</small><strong>${x}</strong><span>Découvrir →</span></div>`).join('')}</div></div></section>
-<section class="section" id="featured"><div class="container"><div class="section-head"><div><span class="eyebrow">Boutique</span><h2>Des packs prêts à personnaliser.</h2></div><button class="btn btn-ghost" onclick="go('/boutique')">Voir tous les produits →</button></div><div class="products">${PRODUCTS.slice(0,4).map(card).join('')}</div></div></section>
-<section class="section"><div class="container learning-banner"><div><span class="eyebrow">FORMATION · DE ZÉRO À PROFESSIONNEL</span><h2>Apprends à créer des designs que les clients veulent acheter.</h2><p>8 modules pour apprendre, pratiquer, construire ton portfolio, trouver des clients et monétiser tes compétences.</p><div class="hero-actions"><button class="btn btn-primary" onclick="go('/formation')">Voir le programme →</button></div></div><div class="learning-points"><div><b>01</b><span>Canva & Photoshop</span></div><div><b>02</b><span>Branding & réseaux sociaux</span></div><div><b>03</b><span>Clients & monétisation</span></div><div><b>04</b><span>Bonus professionnels</span></div></div></div></section>
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Simple et rapide</span><h2>De la découverte à ton premier design.</h2></div></div><div class="steps"><div><b>01</b><h3>Découvre</h3><p>Explore les packs et choisis celui adapté à ton activité.</p></div><div><b>02</b><h3>Achète</h3><p>Choisis ton moyen de paiement et confirme ta commande.</p></div><div><b>03</b><h3>Reçois</h3><p>Après validation, retrouve ton accès depuis ton espace client.</p></div><div><b>04</b><h3>Crée & vends</h3><p>Personnalise tes designs ou utilise la formation pour progresser.</p></div></div></div></section>
-${reviews()}<section class="container cta"><div><span class="eyebrow">À toi de jouer</span><h2>Ton prochain design peut commencer maintenant.</h2><p>Choisis un template ou commence ton parcours de formation.</p></div><div class="hero-actions" style="margin-top:0"><button class="btn btn-primary" onclick="go('/boutique')">Découvrir les templates</button><button class="btn btn-ghost" onclick="go('/formation')">Voir la formation</button></div></section>`}
-function reviews(){return `<section class="section" id="avis"><div class="container"><div class="section-head"><div><span class="eyebrow">Confiance</span><h2>Ils font confiance à Theo Design.</h2></div><p>Des retours courts, concrets et orientés résultat.</p></div><div class="testimonials">${testimonials.map(t=>`<div class="quote"><div style="display:flex;gap:12px;align-items:center"><div class="avatar">${t[1]}</div><div><b>${t[0]}</b><div class="stars">${t[2]}</div></div></div><p>“${t[3]}”</p><small>Client Theo Design</small></div>`).join('')}</div></div></section>`}
-function shop(){return `<section class="section"><div class="container"><span class="eyebrow">Boutique</span><h2 style="margin:10px 0 12px">Des templates prêts à vendre.</h2><p style="color:var(--muted);max-width:700px">Choisis une collection, personnalise-la dans Canva et gagne du temps sur tes prochaines publications.</p><div class="filters">${['Tous','Instagram','Facebook','WhatsApp','Business','Restaurants','Mode','Beauté','Promotions'].map((x,i)=>`<button class="filter ${i===0?'active':''}" onclick="filterProducts(this,'${x}')">${x}</button>`).join('')}</div><div id="productGrid" class="products">${PRODUCTS.map(card).join('')}</div></div></section>`}
-function filterProducts(btn,cat){document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));btn.classList.add('active');const list=cat==='Tous'?PRODUCTS:PRODUCTS.filter(p=>p.cats.includes(cat));document.getElementById('productGrid').innerHTML=list.length?list.map(card).join(''):`<div class="empty" style="grid-column:1/-1">Aucun produit dans cette catégorie.</div>`}
-function productPage(id){const p=PRODUCTS.find(x=>x.id===id);if(!p)return notFound();return `<section class="section"><div class="container"><button class="btn btn-ghost" onclick="go('/boutique')">← Retour à la boutique</button><div class="split" style="margin-top:18px"><div>${productMock(p,1)}<div class="notice" style="margin-top:12px">✓ Aperçu indicatif. Le contenu final est remis après validation du paiement.</div></div><div><span class="eyebrow">Template numérique</span><h2 style="margin:10px 0">${p.name}</h2><p style="color:var(--muted)">${p.desc}</p><div class="price" style="font-size:32px">${money(p.price)}</div><button class="btn btn-primary" style="width:100%;padding:14px" onclick="addToCart('${p.id}')">Acheter maintenant</button><div class="stats"><div class="stat"><b>${p.count}</b><span>Templates</span></div><div class="stat"><b>${p.format.split(' ')[0]}</b><span>Format</span></div><div class="stat"><b>${p.software}</b><span>Logiciel</span></div><div class="stat"><b>Débutant</b><span>Niveau</span></div></div></div></div><div style="margin-top:50px" class="feature-box"><h3>Ce que tu vas recevoir</h3><div class="checks"><div class="check"><b>✓</b> Templates modifiables</div><div class="check"><b>✓</b> Fichiers prêts à utiliser</div><div class="check"><b>✓</b> Lien Canva</div><div class="check"><b>✓</b> Guide d’utilisation</div><div class="check"><b>✓</b> Accès immédiat après validation</div></div><p style="color:var(--muted)">Catégories : ${p.cats.join(' · ')}</p></div></div></section>`}
-function training(){const mods=[['Introduction au design',['Principes fondamentaux','Types de designs','Comprendre son client']],['Canva',['Prise en main','Création d’un design','Utilisation des modèles','Couleurs et typographies','Techniques avancées']],['Photoshop',['Interface','Calques','Détourage','Retouche','Effets','Création d’affiches professionnelles']],['Identité visuelle',['Logo','Palette de couleurs','Typographie','Charte graphique','Branding']],['Création de contenus pour les réseaux sociaux',['Facebook','Instagram','WhatsApp','TikTok','Publicités']],['Design commercial',['Flyers','Affiches','Menus','Promotions','Catalogues','Publications commerciales']],['Trouver des clients',['Construire son portfolio','Trouver ses premiers clients','Utiliser WhatsApp','Utiliser Facebook','Utiliser TikTok']],['Monétiser ses compétences',['Fixer ses prix','Créer des offres','Vendre des templates','Vendre ses services','Fidéliser ses clients']]];return `<section class="section"><div class="container"><span class="eyebrow">Formation complète</span><h2 style="max-width:900px;margin:12px 0">Apprends le design graphique de zéro jusqu’à un niveau professionnel.</h2><p style="color:var(--muted);max-width:760px;font-size:17px">Une formation pratique destinée aux débutants et aux personnes qui souhaitent transformer le design en compétence professionnelle.</p><div class="stats"><div class="stat"><b>8</b><span>Modules</span></div><div class="stat"><b>Débutant → avancé</b><span>Niveau</span></div><div class="stat"><b>Accès</b><span>Aux cours</span></div><div class="stat"><b>Bonus</b><span>Inclus</span></div></div><div class="split" style="margin-top:28px"><div class="course-box"><h3>Programme</h3><div class="modules">${mods.map((m,i)=>`<details class="module" ${i===0?'open':''}><summary>Module ${i+1} — ${m[0]}</summary><div class="module-content"><ul>${m[1].map(x=>`<li>${x}</li>`).join('')}</ul></div></details>`).join('')}</div></div><div class="feature-box"><span class="eyebrow">Offre formation</span><h3>Transforme ton savoir-faire en activité.</h3><p style="color:var(--muted)">Une progression pratique : apprendre, produire, construire un portfolio, trouver des clients puis monétiser tes compétences.</p><div class="price" style="font-size:34px">49 900 FCFA</div><button class="btn btn-primary" style="width:100%;padding:14px" onclick="openCheckout('formation')">S’inscrire à la formation</button><div class="checks"><div class="check"><b>✓</b> Templates professionnels</div><div class="check"><b>✓</b> Ressources graphiques</div><div class="check"><b>✓</b> Bibliothèque de polices</div><div class="check"><b>✓</b> Palettes de couleurs</div><div class="check"><b>✓</b> Checklist design professionnel</div><div class="check"><b>✓</b> Conseils pour trouver des clients</div></div></div></div></div></section>`}
-function client(){if(!state.user)return `<section class="section"><div class="container"><div class="feature-box" style="max-width:560px;margin:auto"><span class="eyebrow">Espace client</span><h2 style="margin:10px 0">Retrouve tes achats.</h2><p style="color:var(--muted)">Connecte-toi pour consulter tes commandes, récupérer tes produits et accéder à ta formation.</p><button class="btn btn-primary" onclick="openLogin()">Se connecter</button></div></div></section>`;const orders=state.orders.filter(o=>o.email===state.user.email);return `<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Mon espace</span><h2>Bonjour ${state.user.name}.</h2></div><button class="btn btn-ghost" onclick="logout()">Déconnexion</button></div><div class="dashboard"><aside class="side"><button class="active">Mes achats</button><button onclick="showToast('La progression de formation sera activée avec le backend.')">Ma formation</button><button onclick="openProfile()">Mon profil</button></aside><div class="panel"><h3>Mes commandes</h3>${orders.length?`<table class="table"><thead><tr><th>Commande</th><th>Date</th><th>Total</th><th>Accès</th></tr></thead><tbody>${orders.map(o=>`<tr><td>#${o.id}</td><td>${o.date}</td><td>${money(o.total)}</td><td><button class="btn btn-ghost" onclick="downloadOrder('${o.id}')">Accéder</button></td></tr>`).join('')}</tbody></table>`:'<div class="empty">Tu n’as encore aucun achat. <button class="btn btn-primary" onclick="go(\'/boutique\')">Voir la boutique</button></div>'}</div></div></div></section>`}
-function admin(){if(!state.admin)return `<section class="section"><div class="container"><div class="feature-box" style="max-width:560px;margin:auto"><span class="eyebrow">Administration</span><h2 style="margin:10px 0">Tableau de bord Theo Design.</h2><p style="color:var(--muted)">MVP local : accès de démonstration pour gérer les ventes et le catalogue. En production, cet espace doit être protégé côté serveur.</p><button class="btn btn-primary" onclick="adminLogin()">Ouvrir l’administration</button></div></div></section>`;return `<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Admin</span><h2>Tableau de bord.</h2></div><button class="btn btn-ghost" onclick="state.admin=false;localStorage.removeItem('td_admin');render()">Quitter</button></div><div class="stats"><div class="stat"><b>${state.orders.length}</b><span>Commandes</span></div><div class="stat"><b>${PRODUCTS.length}</b><span>Produits</span></div><div class="stat"><b>${money(state.orders.reduce((a,o)=>a+o.total,0))}</b><span>Chiffre d’affaires local</span></div><div class="stat"><b>${new Set(state.orders.map(o=>o.email)).size}</b><span>Clients</span></div></div><div class="panel" style="margin-top:20px"><h3>Commandes récentes</h3>${state.orders.length?`<table class="table"><thead><tr><th>ID</th><th>Client</th><th>Montant</th><th>Moyen</th><th>Statut</th></tr></thead><tbody>${state.orders.slice().reverse().map(o=>`<tr><td>#${o.id}</td><td>${o.email}</td><td>${money(o.total)}</td><td>${o.method}</td><td>${o.status}</td></tr>`).join('')}</tbody></table>`:'<div class="empty">Aucune commande.</div>'}</div><div class="panel" style="margin-top:20px"><h3>Catalogue</h3><table class="table"><thead><tr><th>Produit</th><th>Prix</th><th>Templates</th><th>Catégories</th></tr></thead><tbody>${PRODUCTS.map(p=>`<tr><td>${p.name}</td><td>${money(p.price)}</td><td>${p.count}</td><td>${p.cats.join(', ')}</td></tr>`).join('')}</tbody></table></div></div></section>`}
-function notFound(){return `<section class="section"><div class="container empty"><h2>Page introuvable</h2><button class="btn btn-primary" onclick="go('/')">Retour</button></div></section>`}
-function footer(){return `<footer class="footer"><div class="container footer-grid"><div><div class="brand">THEO<span>DESIGN</span></div><p>Designs numériques et formation graphique pour créateurs et entrepreneurs.</p></div><div><h4>Navigation</h4><a href="#/boutique">Boutique</a><a href="#/formation">Formation</a><a href="#/client">Espace client</a></div><div><h4>Assistance</h4><a href="https://wa.me/237670082328" target="_blank">WhatsApp</a><a href="#/paiement">Paiement</a></div><div><h4>Admin</h4><a href="#/admin">Tableau de bord</a><small>© 2026 Theo Design</small></div></div></footer>`}
-function payment(){return `<section class="section"><div class="container"><span class="eyebrow">Paiement</span><h2 style="margin:10px 0">Paiement simple et rassurant.</h2><p style="color:var(--muted);max-width:720px">Pour le MVP, le paiement est préparé autour des moyens utilisés au Cameroun. La validation finale peut ensuite être reliée à un prestataire de paiement avec confirmation serveur.</p><div class="paybox"><div class="paymethod"><b>Mobile Money</b>670 26 78 51</div><div class="paymethod"><b>Orange Money</b>689 04 28 63</div><div class="paymethod"><b>MTN MoMo</b>Disponible selon le compte marchand configuré.</div></div><div class="notice">Ne saisis jamais ton code PIN dans le site. Après paiement, conserve la preuve de transaction et contacte Theo Design si une validation manuelle est nécessaire.</div></div></section>`}
-function openModal(html){document.getElementById('modalBox').innerHTML=html;document.getElementById('modal').classList.add('open')};function closeModal(){document.getElementById('modal').classList.remove('open')}
-function openCart(){const items=state.cart.map(id=>PRODUCTS.find(p=>p.id===id)).filter(Boolean);const total=items.reduce((a,p)=>a+p.price,0);openModal(`<div class="modal-head"><div><span class="eyebrow">Panier</span><h2 style="margin:7px 0">${items.length?'Ton panier':'Ton panier est vide'}</h2></div><button class="close" onclick="closeModal()">×</button></div>${items.length?`<div class="checks">${items.map(p=>`<div class="paymethod"><div style="display:flex;justify-content:space-between;gap:10px"><span>${p.name}</span><b>${money(p.price)}</b></div></div>`).join('')}</div><div class="price">Total : ${money(total)}</div><button class="btn btn-primary" style="width:100%" onclick="openCheckout('cart')">Passer au paiement</button>`:'<div class="empty"><button class="btn btn-primary" onclick="closeModal();go(\'/boutique\')">Découvrir les produits</button></div>'}`)}
-function openCheckout(kind){let items=kind==='formation'?[{id:'formation',name:'Formation complète en design graphique',price:49900}]:state.cart.map(id=>PRODUCTS.find(p=>p.id===id)).filter(Boolean);if(!items.length){showToast('Ton panier est vide.');return}const total=items.reduce((a,p)=>a+p.price,0);openModal(`<div class="modal-head"><div><span class="eyebrow">Checkout</span><h2 style="margin:7px 0">Finaliser la commande</h2></div><button class="close" onclick="closeModal()">×</button></div><form class="form" onsubmit="submitOrder(event,'${kind}')"><div><label>Nom complet</label><input id="coName" required placeholder="Ton nom"></div><div><label>WhatsApp / téléphone</label><input id="coPhone" required placeholder="6XXXXXXXX"></div><div><label>Email</label><input id="coEmail" type="email" required placeholder="ton@email.com"></div><div><label>Moyen de paiement</label><select id="coMethod"><option>Mobile Money — 670 26 78 51</option><option>Orange Money — 689 04 28 63</option><option>MTN MoMo</option></select></div><div class="notice">Total à payer : <b>${money(total)}</b><br>Après le paiement, garde la preuve de transaction. Le MVP enregistre la commande localement ; la validation automatique nécessite un backend et une API de paiement.</div><button class="btn btn-primary" type="submit">J’ai effectué le paiement → Confirmer</button></form>`)}
-function submitOrder(e,kind){e.preventDefault();const items=kind==='formation'?[{id:'formation',name:'Formation complète en design graphique',price:49900}]:state.cart.map(id=>PRODUCTS.find(p=>p.id===id)).filter(Boolean);const total=items.reduce((a,p)=>a+p.price,0);const order={id:Date.now().toString().slice(-7),name:document.getElementById('coName').value,phone:document.getElementById('coPhone').value,email:document.getElementById('coEmail').value,method:document.getElementById('coMethod').value,total,items:items.map(x=>x.id),date:new Date().toLocaleDateString('fr-FR'),status:'À valider'};state.orders.push(order);state.user={name:order.name,email:order.email,phone:order.phone};state.cart=[];save();closeModal();showToast('Commande enregistrée. Contacte Theo Design avec ta preuve de paiement.');go('/client')}
-function addToCart(id){if(!state.cart.includes(id))state.cart.push(id);save();showToast('Produit ajouté au panier.');}
-function updateCart(){document.getElementById('cartCount').textContent=state.cart.length}
-function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3200)}
-function openLogin(){openModal(`<div class="modal-head"><div><span class="eyebrow">Espace client</span><h2 style="margin:7px 0">Connexion rapide</h2></div><button class="close" onclick="closeModal()">×</button></div><form class="form" onsubmit="login(event)"><div><label>Email</label><input id="loginEmail" type="email" required></div><div><label>Nom</label><input id="loginName" required></div><button class="btn btn-primary">Entrer dans mon espace</button></form><p style="font-size:12px;color:var(--muted)">MVP : l’authentification réelle devra être déplacée côté serveur avec sessions sécurisées ou OAuth.</p>`)}
-function login(e){e.preventDefault();state.user={email:document.getElementById('loginEmail').value,name:document.getElementById('loginName').value};save();closeModal();render()}
-function logout(){state.user=null;save();render()}
-function openProfile(){showToast('Le profil complet sera relié au backend dans la version production.')}
-function adminLogin(){openModal(`<div class="modal-head"><div><span class="eyebrow">Admin</span><h2 style="margin:7px 0">Connexion démo</h2></div><button class="close" onclick="closeModal()">×</button></div><form class="form" onsubmit="e=>e"><div><label>Code démo</label><input id="adminCode" type="password" required placeholder="theo2026"></div><button class="btn btn-primary" type="button" onclick="if(document.getElementById('adminCode').value==='theo2026'){state.admin=true;localStorage.setItem('td_admin','1');closeModal();render()}else showToast('Code incorrect.')">Ouvrir</button></form><p style="font-size:12px;color:var(--muted)">Ce code est uniquement pour la démonstration locale. Ne pas l’utiliser en production.</p>`)}
-function downloadOrder(id){const o=state.orders.find(x=>x.id===id);if(!o)return;const names=o.items.map(id=>id==='formation'?'Formation complète en design graphique':PRODUCTS.find(p=>p.id===id)?.name).filter(Boolean);openModal(`<div class="modal-head"><div><span class="eyebrow">Commande #${o.id}</span><h2 style="margin:7px 0">Tes accès</h2></div><button class="close" onclick="closeModal()">×</button></div><div class="notice">Statut : <b>${o.status}</b>. Pour un MVP sécurisé, les fichiers sont remis après validation du paiement.</div><div class="checks">${names.map(n=>`<div class="paymethod"><b>${n}</b><small>Accès prévu après validation</small></div>`).join('')}</div><a class="btn btn-primary" href="https://wa.me/237670082328?text=Bonjour%20Theo%20Design%2C%20je%20viens%20de%20passer%20la%20commande%20%23${o.id}%20et%20je%20souhaite%20la%20validation." target="_blank">Envoyer la preuve sur WhatsApp</a>`)}
-function toggleMobileNav(){const n=document.querySelector('.navlinks');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='64px';n.style.left='0';n.style.right='0';n.style.padding='16px';n.style.background='#0b0d11';n.style.flexDirection='column'}
-function render(){let path=location.hash.replace(/^#/,'')||'/';let content=path==='/'?home():path==='/boutique'?shop():path==='/formation'?training():path==='/client'?client():path==='/admin'?admin():path==='/paiement'?payment():path.startsWith('/produit/')?productPage(path.split('/')[2]):notFound();document.getElementById('app').innerHTML=content+footer();updateCart();window.scrollTo({top:0,behavior:'instant'})}
-window.addEventListener('hashchange',render);render();
+const FORMATION = {id:7, name:"Formation Design Graphique Complète", price:49900, templates:200, format:"Vidéos + Templates", level:"Tous niveaux", cat:["Formation"], img:"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80"};
+const CATEGORIES = [
+  {key:"Instagram", label:"Instagram", count:"120+", img:"https://images.unsplash.com/photo-1611262588024-d12430b98920?w=300&q=80"},
+  {key:"Facebook", label:"Facebook", count:"100+", img:"https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=300&q=80"},
+  {key:"WhatsApp", label:"WhatsApp", count:"80+", img:"https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=300&q=80"},
+  {key:"Business", label:"Business", count:"200+", img:"https://images.unsplash.com/photo-1553877522-43269d4ea984?w=300&q=80"},
+  {key:"Restaurants", label:"Restaurants", count:"80", img:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300&q=80"},
+  {key:"Mode", label:"Mode", count:"90", img:"https://images.unsplash.com/photo-1483985988355-763728e1935b?w=300&q=80"},
+  {key:"Beauté", label:"Beauté", count:"70", img:"https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=300&q=80"},
+  {key:"Promotions", label:"Promotions", count:"60", img:"https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=300&q=80"},
+];
+const FILTERS = ["Tous","Instagram","Facebook","WhatsApp","Business","Restaurants","Mode","Beauté","Promotions"];
+let activeFilter = "Tous";
+
+// ---------- helpers ----------
+const esc = (s)=> String(s).replace(/[&<>"']/g, m=> ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const fmt = (n)=> new Intl.NumberFormat('fr-FR').format(n) + ' FCFA';
+const genNumber = ()=> 'TD-' + Math.floor(1000+Math.random()*8999);
+const genCode = ()=> String(Math.floor(1000+Math.random()*8999));
+function safeJSON(key, fallback){
+  try{ const v = localStorage.getItem(key); return v? JSON.parse(v): fallback }catch{ localStorage.removeItem(key); return fallback }
+}
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.innerHTML = `<i data-lucide="check-circle" style="width:16px;height:16px"></i> ${esc(msg)}`;
+  lucide.createIcons({nodes:[t]});
+  t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2600);
+}
+function copyToClipboard(txt){
+  navigator.clipboard.writeText(txt).then(()=>toast('Copié : '+txt));
+}
+
+// ---------- cart ----------
+function getCart(){ return safeJSON('td_cart', []) }
+function saveCart(c){ localStorage.setItem('td_cart', JSON.stringify(c)); renderCart(); }
+function addToCart(id){
+  const c=getCart();
+  const f=c.find(x=>x.id===id);
+  if(f) f.qty++;
+  else c.push({id, qty:1});
+  saveCart(c);
+  toast('Ajouté au panier');
+  openCart();
+}
+function addFormationToCart(){ addToCart(7); }
+function removeFromCart(id){ saveCart(getCart().filter(x=>x.id!==id)) }
+function updateQty(id, d){
+  const c=getCart(); const it=c.find(x=>x.id===id); if(!it) return;
+  it.qty+=d; if(it.qty<=0) return removeFromCart(id); saveCart(c);
+}
+function clearCart(){ saveCart([]); toast('Panier vidé') }
+function cartTotal(){
+  const c=getCart(); let t=0;
+  c.forEach(it=>{
+    const p = it.id===7 ? FORMATION : PRODUCTS.find(p=>p.id===it.id);
+    if(p) t+= p.price * it.qty;
+  }); return t;
+}
+function cartCount(){ return getCart().reduce((s,x)=>s+x.qty,0) }
+function getProductById(id){
+  if(id===7) return FORMATION;
+  return PRODUCTS.find(p=>p.id===id);
+}
+
+function renderCart(){
+  const c=getCart();
+  const count=cartCount();
+  document.getElementById('cartCount').textContent = count;
+  document.getElementById('drawerCount').textContent = count;
+  document.getElementById('drawerTotal').textContent = fmt(cartTotal());
+  const body=document.getElementById('cartBody');
+  if(c.length===0){
+    body.innerHTML = `<div style="text-align:center; padding:28px 10px; color:var(--muted)"><div style="width:56px;height:56px; border-radius:50%; background:var(--surface2); border:1px solid var(--border); display:grid; place-items:center; margin:0 auto 10px"><i data-lucide="shopping-bag" style="width:20px;height:20px"></i></div><b style="color:var(--text)">Panier vide</b><p style="font-size:13px">Ajoute des packs pour commencer.</p><a href="#/boutique" onclick="closeCart()" class="btn btn-primary" style="margin-top:10px">Voir la boutique</a></div>`;
+  } else {
+    body.innerHTML = c.map(it=>{
+      const p=getProductById(it.id);
+      return `<div class="cart-item">
+        <img src="${esc(p.img)}" alt="">
+        <div style="flex:1">
+          <div style="font-weight:800; font-size:13px; line-height:1.2">${esc(p.name)}</div>
+          <div style="color:var(--muted); font-size:12px; font-weight:700">${p.templates} templates • ${esc(p.format)}</div>
+          <div class="qty">
+            <button onclick="updateQty(${it.id},-1)" aria-label="Moins">−</button>
+            <b style="min-width:18px; text-align:center; font-size:13px">${it.qty}</b>
+            <button onclick="updateQty(${it.id},1)" aria-label="Plus">+</button>
+            <span style="margin-left:auto; font-weight:900; font-size:13px">${esc(fmt(p.price*it.qty))}</span>
+          </div>
+        </div>
+        <button onclick="removeFromCart(${it.id})" style="width:28px;height:28px; border-radius:999px; border:1px solid var(--border); background:var(--surface); display:grid; place-items:center; cursor:pointer"><i data-lucide="trash-2" style="width:14px;height:14px"></i></button>
+      </div>`;
+    }).join('');
+  }
+  // summary in checkout
+  const sum=document.getElementById('cartSummary');
+  if(sum){
+    if(c.length===0) sum.innerHTML = `<div style="text-align:center; color:var(--muted); font-weight:700; font-size:13px">Panier vide — <a href="#/boutique" style="color:var(--accent); text-decoration:underline">ajouter des produits</a></div>`;
+    else {
+      sum.innerHTML = `<b style="font-size:13px">Résumé</b><div style="margin-top:8px; display:grid; gap:6px">${c.map(it=>{
+        const p=getProductById(it.id);
+        return `<div style="display:flex; justify-content:space-between; font-size:13px; font-weight:600"><span>${esc(p.name)} × ${it.qty}</span><span>${esc(fmt(p.price*it.qty))}</span></div>`;
+      }).join('')}<div class="divider" style="margin:8px 0"></div><div style="display:flex; justify-content:space-between; font-weight:900"><span>Total à payer</span><span style="color:var(--accent)">${esc(fmt(cartTotal()))}</span></div></div>`;
+    }
+  }
+  lucide.createIcons();
+}
+function openCart(){ document.getElementById('cartDrawer').classList.add('open'); document.getElementById('overlay').classList.add('show'); document.getElementById('cartDrawer').setAttribute('aria-hidden','false'); }
+function closeCart(){ document.getElementById('cartDrawer').classList.remove('open'); document.getElementById('overlay').classList.remove('show'); document.getElementById('cartDrawer').setAttribute('aria-hidden','true'); }
+
+// ---------- orders ----------
+function getOrders(){ return safeJSON('td_orders', []) }
+function saveOrders(o){ localStorage.setItem('td_orders', JSON.stringify(o)) }
+
+// ---------- boutique render ----------
+function renderHomeCats(){
+  const el=document.getElementById('catsHome');
+  el.innerHTML = CATEGORIES.map(c=>`
+    <div class="cat" onclick="goFilter('${esc(c.key)}')">
+      <img src="${esc(c.img)}" alt="">
+      <div><b>${esc(c.label)}</b><span>${esc(c.count)} templates</span></div>
+      <span class="arrow"><i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </div>
+  `).join('');
+}
+function goFilter(key){
+  activeFilter = key;
+  location.hash = "#/boutique";
+  // will render after hash change
+  setTimeout(()=>{ renderBoutique(); window.scrollTo(0,0); }, 50);
+}
+function productCardHTML(p){
+  return `<article class="product-card" onclick="openProduct(${p.id})">
+    <div class="thumb">
+      <img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">
+      <span class="badge-top">${esc(p.badge)}</span>
+      <span class="price-tag">${esc(fmt(p.price))}</span>
+    </div>
+    <div class="body">
+      <h3>${esc(p.name)}</h3>
+      <div class="meta"><span class="chip">${p.templates} templates</span><span class="chip">${esc(p.level)}</span></div>
+      <div style="color:var(--muted); font-size:12px; font-weight:600; display:flex; gap:6px; flex-wrap:wrap">${p.tags.map(t=>`<span>#${esc(t)}</span>`).join('')}</div>
+      <div class="foot">
+        <button class="btn-sm" onclick="event.stopPropagation(); openProduct(${p.id})">Détails</button>
+        <button class="btn-sm primary" onclick="event.stopPropagation(); addToCart(${p.id})">Ajouter</button>
+      </div>
+    </div>
+  </article>`;
+}
+function renderFeatured(){
+  const el=document.getElementById('featuredGrid');
+  const feats = PRODUCTS.slice(0,4);
+  el.innerHTML = feats.map(p=>productCardHTML(p)).join('');
+}
+function renderFilters(){
+  const el=document.getElementById('filters');
+  el.innerHTML = FILTERS.map(f=>`<button class="filter-chip ${activeFilter===f?'active':''}" onclick="setFilter('${esc(f)}')">${esc(f)}</button>`).join('');
+}
+function setFilter(f){ activeFilter=f; renderBoutique(); }
+function renderBoutique(){
+  renderFilters();
+  const grid=document.getElementById('boutiqueGrid');
+  let list = [...PRODUCTS];
+  // include formation as card if filter Tous or doesn't exclude? Show formation always in Tous
+  if(activeFilter==="Tous"){
+    list = [...PRODUCTS, {...FORMATION, badge:"Formation", tags:["Formation"]}];
+  } else {
+    list = PRODUCTS.filter(p=> p.tags.includes(activeFilter) || p.cat.includes(activeFilter));
+    if(activeFilter==="Tous") list = PRODUCTS;
+  }
+  if(list.length===0){
+    grid.innerHTML = `<div class="card" style="grid-column:1/-1; text-align:center; padding:28px"><b>Aucun produit dans cette catégorie</b><p style="color:var(--muted)">Essaie un autre filtre.</p></div>`;
+  } else {
+    grid.innerHTML = list.map(p=>productCardHTML(p)).join('');
+  }
+  lucide.createIcons();
+}
+
+// ---------- product page ----------
+let currentProductId = 1;
+function openProduct(id){
+  currentProductId = id;
+  location.hash = "#/produit/"+id;
+}
+function renderProductPage(){
+  const id = currentProductId;
+  const p = getProductById(id);
+  if(!p){
+    document.getElementById('productPreview').innerHTML = `<div class="card">Produit introuvable</div>`;
+    return;
+  }
+  const thumbs = [p.img, "https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&q=80", "https://images.unsplash.com/photo-1499951360447-b19be2c0e1a8?w=600&q=80", "https://images.unsplash.com/photo-1523726491678-bf852e717f6a?w=600&q=80"];
+  document.getElementById('productPreview').innerHTML = `
+    <div class="preview-main"><img id="mainPreviewImg" src="${esc(p.img)}" alt=""></div>
+    <div class="preview-thumbs">${thumbs.map((t,i)=>`<img src="${esc(t)}" class="${i===0?'active':''}" onclick="switchPreview(this,'${esc(t)}')" alt="">`).join('')}</div>
+    <div style="padding:14px; display:flex; gap:8px; flex-wrap:wrap">
+      <span class="chip"><i data-lucide="layers" style="width:12px;height:12px"></i> ${p.templates} templates</span>
+      <span class="chip">${esc(p.format)}</span>
+      <span class="chip">${esc(p.level)}</span>
+    </div>
+  `;
+  document.getElementById('productInfo').innerHTML = `
+    <div style="display:flex; gap:8px; align-items:center"><span style="background:var(--accent); color:#08090c; padding:5px 10px; border-radius:999px; font-size:11px; font-weight:900">${esc(p.badge||'Pack')}</span><span style="color:var(--muted); font-size:12px; font-weight:700">Ref: TD-${String(p.id).padStart(3,'0')}</span></div>
+    <h2 style="font-family:'Space Grotesk',sans-serif; font-size:28px; line-height:1.05; margin:10px 0 8px; letter-spacing:-.03em">${esc(p.name)}</h2>
+    <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap">
+      <span style="font-size:30px; font-weight:900">${esc(fmt(p.price))}</span>
+      <span style="text-decoration:line-through; color:var(--muted); font-weight:700">${esc(fmt(Math.round(p.price*1.4)))}</span>
+      <span style="background:rgba(255,176,46,0.14); color:#ffb02e; border:1px solid rgba(255,176,46,0.22); padding:5px 8px; border-radius:999px; font-size:11px; font-weight:900">-30% aujourd’hui</span>
+    </div>
+    <p style="color:var(--muted); font-size:14px; margin:10px 0 14px">Pack premium 100% éditable sur Canva (téléphone ou PC). Idéal pour ${esc(p.cat.join(', '))}. Modifie textes, couleurs, photos en 2 clics et revends à tes clients.</p>
+    <div class="specs">
+      <div class="spec"><small>Nombre de templates</small><b>${p.templates}</b></div>
+      <div class="spec"><small>Format</small><b style="font-size:14px">${esc(p.format)}</b></div>
+      <div class="spec"><small>Logiciel</small><b style="font-size:14px">Canva (gratuit)</b></div>
+      <div class="spec"><small>Niveau</small><b style="font-size:14px">${esc(p.level)}</b></div>
+    </div>
+    <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap">
+      <button class="btn btn-primary" style="flex:1; padding:14px" onclick="addToCart(${p.id})"><i data-lucide="shopping-bag" style="width:16px;height:16px"></i> Ajouter au panier</button>
+      <button class="btn btn-ghost" onclick="addToCart(${p.id}); location.hash='#/paiement'"><i data-lucide="zap" style="width:16px;height:16px"></i> Acheter maintenant</button>
+    </div>
+    <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap">
+      <span class="kbd"><i data-lucide="shield-check" style="width:12px;height:12px"></i> Paiement Mobile Money</span>
+      <span class="kbd"><i data-lucide="download" style="width:12px;height:12px"></i> Livraison instantanée</span>
+      <span class="kbd"><i data-lucide="refresh-cw" style="width:12px;height:12px"></i> Accès à vie</span>
+    </div>
+  `;
+  lucide.createIcons();
+}
+function switchPreview(el, src){
+  document.getElementById('mainPreviewImg').src = src;
+  document.querySelectorAll('.preview-thumbs img').forEach(i=>i.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// ---------- formation modules ----------
+const MODULES = [
+  {title:"Module 1 — Introduction au design", dur:"2h12 • 5 leçons", desc:"Principes de base, psychologie des couleurs, typographies, grille, hiérarchie. Exercice : refaire 3 affiches."},
+  {title:"Module 2 — Maîtriser Canva comme un pro", dur:"3h04 • 7 leçons", desc:"Canva gratuit vs Pro, raccourcis, détourages, kit de marque, création de templates vendables."},
+  {title:"Module 3 — Photoshop essentiel", dur:"2h40 • 6 leçons", desc:"Interface, retouche photo, mockups, export pro. Pas besoin d’être expert."},
+  {title:"Module 4 — Identité visuelle", dur:"2h20 • 5 leçons", desc:"Logo, palette, charte graphique, pack réseaux. Tu crées l’identité d’une marque fictive."},
+  {title:"Module 5 — Réseaux sociaux qui convertissent", dur:"3h10 • 7 leçons", desc:"Formats Instagram/Facebook/WhatsApp, hooks visuels, calendrier éditorial, templates viraux."},
+  {title:"Module 6 — Design commercial", dur:"2h30 • 5 leçons", desc:"Affiches promo, menus, flyers, cartes de visite. Études de cas restaurants & beauté."},
+  {title:"Module 7 — Trouver des clients", dur:"2h00 • 4 leçons", desc:"Prospection WhatsApp/Facebook, portfolio, fixer ses prix (5k à 50k FCFA). Script d’appel."},
+  {title:"Module 8 — Monétiser & scaler", dur:"1h45 • 3 leçons", desc:"Vendre sur WhatsApp, créer ta boutique, automatiser, témoignages élèves."},
+];
+function renderModules(){
+  const el=document.getElementById('modulesList');
+  el.innerHTML = MODULES.map((m,i)=>`
+    <div class="module ${i===0?'open':''}" id="mod-${i}">
+      <div class="module-head" onclick="toggleModule(${i})">
+        <span class="idx">${String(i+1).padStart(2,'0')}</span>
+        <h4>${esc(m.title)}</h4>
+        <span style="color:var(--muted); font-size:12px; font-weight:700">${esc(m.dur)}</span>
+        <i data-lucide="${i===0?'chevron-up':'chevron-down'}" style="width:16px;height:16px"></i>
+      </div>
+      <div class="module-body">${esc(m.desc)}</div>
+    </div>
+  `).join('');
+  lucide.createIcons();
+}
+function toggleModule(i){
+  const el=document.getElementById('mod-'+i);
+  const isOpen=el.classList.contains('open');
+  document.querySelectorAll('.module').forEach(m=>m.classList.remove('open'));
+  // update icons
+  if(!isOpen) el.classList.add('open');
+  renderModulesIcons();
+}
+function renderModulesIcons(){ lucide.createIcons(); }
+
+// ---------- espace ----------
+function renderOrders(){
+  const orders=getOrders();
+  const list=document.getElementById('ordersList');
+  const empty=document.getElementById('emptyOrders');
+  if(orders.length===0){
+    list.innerHTML=''; empty.classList.remove('hidden');
+    return;
+  }
+  empty.classList.add('hidden');
+  // sort newest first
+  const sorted=[...orders].reverse();
+  list.innerHTML = sorted.map(o=>{
+    const statusClass = o.status==='Payée'?'payee':o.status==='Annulée'?'annulee':'valider';
+    const total = o.total;
+    const items = o.items.map(it=>{
+      const p=getProductById(it.id);
+      const link = o.links && o.links[it.id];
+      const showLink = o.status==='Payée' && link;
+      return `<div style="display:flex; gap:10px; align-items:center; padding:8px; background:var(--surface); border:1px solid var(--border); border-radius:12px">
+        <img src="${esc(p.img)}" style="width:48px;height:48px; border-radius:10px; object-fit:cover; border:1px solid var(--border)" alt="">
+        <div style="flex:1"><b style="font-size:13px">${esc(p.name)}</b><div style="font-size:11px; color:var(--muted); font-weight:700">${p.templates} templates • ${esc(fmt(p.price))} × ${it.qty}</div>
+        ${showLink?`<a href="${esc(link)}" target="_blank" rel="noopener noreferrer" class="link-chip" style="margin-top:6px"><i data-lucide="download" style="width:12px;height:12px"></i> Télécharger / Canva</a>`:`${o.status==='Payée'?'<div style="font-size:11px; color:var(--muted); margin-top:4px">Lien en préparation — contact WhatsApp si besoin</div>':''}`}
+        </div>
+      </div>`;
+    }).join('');
+    const waText = `Bonjour Theo Design 👋%0AJe viens de payer ma commande ${esc(o.number)} (${esc(fmt(total))}) via ${esc(o.payMethod)}.%0AVoici ma preuve de paiement (capture SMS).%0AMerci !`;
+    const waLink = `https://wa.me/237670082328?text=${waText}`;
+    return `<div class="order-row">
+      <div class="order-top">
+        <div><b class="mono" style="font-size:14px">${esc(o.number)}</b> <span style="color:var(--muted); font-size:12px; font-weight:700">• ${new Date(o.date).toLocaleString('fr-FR')}</span><div style="font-size:12px; color:var(--muted); font-weight:600">${esc(o.customer.name)} • ${esc(o.customer.phone)} • ${esc(o.customer.email)}</div></div>
+        <span class="status ${statusClass}">${esc(o.status)}</span>
+      </div>
+      <div style="display:grid; gap:8px">${items}</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:6px">
+        <b>Total : ${esc(fmt(total))} <span style="font-weight:600; color:var(--muted); font-size:12px">• Payé via ${esc(o.payMethod)}</span></b>
+        <div style="display:flex; gap:8px; flex-wrap:wrap">
+          <span class="kbd">Code secret : ${esc(o.code)}</span>
+          <a href="${waLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:8px 12px; font-size:12px"><i data-lucide="message-circle" style="width:14px;height:14px"></i> Envoyer preuve WhatsApp</a>
+        </div>
+      </div>
+      ${o.status==='À valider'?`<div style="font-size:12px; color:var(--muted); background:rgba(255,176,46,0.08); border:1px dashed rgba(255,176,46,0.22); padding:8px 10px; border-radius:12px; margin-top:6px">⏳ En attente de validation après ton paiement Mobile Money. Envoie la capture sur WhatsApp pour validation rapide.</div>`:''}
+    </div>`;
+  }).join('');
+  lucide.createIcons();
+}
+function trackOrder(){
+  const num=document.getElementById('trackNumber').value.trim().toUpperCase();
+  const code=document.getElementById('trackCode').value.trim();
+  const res=document.getElementById('trackResult');
+  if(!num || !code){ res.innerHTML=`<div style="color:#ff6b6b; font-weight:700; font-size:13px">Renseigne numéro + code secret.</div>`; return; }
+  const orders=getOrders();
+  const o=orders.find(x=> x.number===num && x.code===code);
+  if(!o){ res.innerHTML=`<div style="background:rgba(255,77,77,0.1); border:1px solid rgba(255,77,77,0.22); padding:12px; border-radius:12px; color:#ff6b6b; font-weight:700; font-size:13px">Aucune commande trouvée. Vérifie numéro et code.</div>`; return; }
+  const statusClass=o.status==='Payée'?'payee':o.status==='Annulée'?'annulee':'valider';
+  res.innerHTML=`<div style="background:var(--surface2); border:1px solid var(--border); padding:14px; border-radius:14px">
+    <div style="display:flex; justify-content:space-between; align-items:center"><b>${esc(o.number)}</b><span class="status ${statusClass}">${esc(o.status)}</span></div>
+    <div style="font-size:12px; color:var(--muted); margin-top:4px">${esc(fmt(o.total))} • ${esc(o.payMethod)} • ${new Date(o.date).toLocaleString('fr-FR')}</div>
+    <div style="margin-top:10px; display:grid; gap:8px">${o.items.map(it=>{
+      const p=getProductById(it.id);
+      const link=o.links && o.links[it.id];
+      return `<div style="font-size:13px; padding:8px; background:var(--surface); border:1px solid var(--border); border-radius:12px; display:flex; justify-content:space-between; align-items:center"><span>${esc(p.name)} × ${it.qty}</span>${o.status==='Payée' && link ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent); font-weight:900; text-decoration:underline">Télécharger</a>` : `<span style="color:var(--muted); font-weight:700">${o.status==='Payée'?'Lien bientôt':'À valider'}</span>`}</div>`;
+    }).join('')}</div>
+  </div>`;
+}
+
+// ---------- checkout ----------
+function submitCheckout(e){
+  e.preventDefault();
+  const name=document.getElementById('cName').value.trim();
+  const phone=document.getElementById('cPhone').value.trim();
+  const email=document.getElementById('cEmail').value.trim();
+  const pay=document.getElementById('cPay').value;
+  if(!name || !phone || !email || !pay){ toast('Remplis tous les champs'); return; }
+  if(!/^6\d{8}$/.test(phone.replace(/\s/g,''))){ toast('Téléphone invalide (ex: 6XXXXXXXX)'); return; }
+  if(cartCount()===0){ toast('Panier vide'); return; }
+  const items=getCart();
+  const total=cartTotal();
+  const number=genNumber();
+  const code=genCode();
+  const order={
+    id: Date.now(),
+    number, code,
+    date: new Date().toISOString(),
+    items: [...items],
+    total,
+    customer:{name, phone, email},
+    payMethod: pay,
+    status: "À valider",
+    links: {}
+  };
+  const orders=getOrders(); orders.push(order); saveOrders(orders);
+  saveCart([]);
+  // show success
+  const succ=document.getElementById('checkoutSuccess');
+  succ.classList.remove('hidden');
+  const waText = `Bonjour Theo Design 👋%0ACommande ${number} - Code ${code}%0AJe viens de payer ${fmt(total)} via ${pay}.%0AClient: ${name} - ${phone}%0AVoici ma capture de paiement 👇`;
+  const waLink = `https://wa.me/237670082328?text=${encodeURIComponent(`Bonjour Theo Design 👋\nCommande ${number} - Code ${code}\nJe viens de payer ${fmt(total)} via ${pay}.\nClient: ${name} - ${phone}\nVoici ma capture de paiement 👇`)}`;
+  succ.innerHTML = `
+    <div style="width:48px;height:48px; border-radius:50%; background:var(--accent); color:#08090c; display:grid; place-items:center; margin:0 auto 10px"><i data-lucide="check" style="width:20px;height:20px"></i></div>
+    <b style="font-size:16px">Commande créée : ${esc(number)}</b>
+    <div style="margin:6px 0 4px"><span class="kbd">Code secret : ${esc(code)}</span> <span style="font-size:12px; color:var(--muted); font-weight:700">À conserver !</span></div>
+    <p style="color:var(--muted); font-size:13px; margin:8px 0 0">1) Paie <b style="color:var(--text)">${esc(fmt(total))}</b> via <b style="color:var(--text)">${esc(pay)}</b><br>2) Envoie la capture sur WhatsApp pour validation rapide.</p>
+    <div style="display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; justify-content:center">
+      <a href="${waLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i data-lucide="message-circle" style="width:16px;height:16px"></i> Envoyer preuve WhatsApp</a>
+      <a href="#/espace" class="btn btn-ghost">Voir dans Mon espace</a>
+    </div>
+    <div style="font-size:11px; color:var(--muted); margin-top:8px">Retrouve ta commande dans “Mon espace” avec numéro + code.</div>
+  `;
+  lucide.createIcons();
+  document.getElementById('checkoutForm').reset();
+  renderOrders();
+  renderCart();
+  toast('Commande '+number+' créée — code '+code);
+  // scroll
+  succ.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+// ---------- admin ----------
+const ADMIN_EMAIL="admin@theodesign.cm";
+const ADMIN_PASS="Admin123!";
+function isAdmin(){ return sessionStorage.getItem('td_admin')==='1' }
+function adminLogin(e){
+  e.preventDefault();
+  const email=document.getElementById('aEmail').value.trim();
+  const pass=document.getElementById('aPass').value;
+  if(email===ADMIN_EMAIL && pass===ADMIN_PASS){
+    sessionStorage.setItem('td_admin','1');
+    toast('Connecté en admin');
+    showAdminDash();
+  } else {
+    toast('Identifiants incorrects');
+  }
+}
+function adminLogout(){ sessionStorage.removeItem('td_admin'); showAdminLogin(); toast('Déconnecté'); }
+function showAdminLogin(){
+  document.getElementById('adminLoginWrap').classList.remove('hidden');
+  document.getElementById('adminDash').classList.add('hidden');
+}
+function showAdminDash(){
+  document.getElementById('adminLoginWrap').classList.add('hidden');
+  document.getElementById('adminDash').classList.remove('hidden');
+  renderAdmin();
+}
+function renderAdmin(){
+  const orders=getOrders();
+  document.getElementById('statTotal').textContent = orders.length;
+  document.getElementById('statPending').textContent = orders.filter(o=>o.status==='À valider').length;
+  document.getElementById('statPaid').textContent = orders.filter(o=>o.status==='Payée').length;
+  const revenue = orders.filter(o=>o.status==='Payée').reduce((s,o)=>s+o.total,0);
+  document.getElementById('statRevenue').textContent = fmt(revenue);
+
+  const tbody=document.getElementById('adminTbody');
+  const empty=document.getElementById('adminEmpty');
+  if(orders.length===0){ tbody.innerHTML=''; empty.classList.remove('hidden'); return; }
+  empty.classList.add('hidden');
+  const sorted=[...orders].reverse();
+  tbody.innerHTML = sorted.map(o=>{
+    const itemsLinks = o.items.map(it=>{
+      const p=getProductById(it.id);
+      const val = o.links && o.links[it.id] ? esc(o.links[it.id]) : '';
+      return `<div style="display:flex; gap:6px; align-items:center; margin-bottom:6px">
+        <span style="font-size:12px; font-weight:700; min-width:120px">${esc(p.name.slice(0,18))}…</span>
+        <input data-link="${o.id}-${it.id}" value="${val}" placeholder="https://canva.com/..." style="flex:1; background:var(--surface2); border:1px solid var(--border); border-radius:10px; padding:7px 8px; font-size:12px; color:var(--text)">
+        <button class="btn btn-primary" style="padding:7px 10px; font-size:11px" onclick="saveLink(${o.id},${it.id})">Enregistrer</button>
+      </div>`;
+    }).join('');
+    return `<tr class="admin-row">
+      <td><b class="mono" style="font-size:13px">${esc(o.number)}</b><div style="font-size:11px; color:var(--muted); font-weight:700">Code ${esc(o.code)} • ${new Date(o.date).toLocaleDateString('fr-FR')}</div></td>
+      <td><div style="font-weight:800; font-size:13px">${esc(o.customer.name)}</div><div style="font-size:11px; color:var(--muted)">${esc(o.customer.phone)}<br>${esc(o.customer.email)}</div></td>
+      <td><b>${esc(fmt(o.total))}</b><div style="font-size:11px; color:var(--muted)">${esc(o.payMethod)}</div></td>
+      <td><span class="status ${o.status==='Payée'?'payee':o.status==='Annulée'?'annulee':'valider'}">${esc(o.status)}</span></td>
+      <td style="min-width:320px">${itemsLinks || '<span style="color:var(--muted); font-size:12px">—</span>'}</td>
+      <td style="text-align:right; white-space:nowrap">
+        <div style="display:flex; gap:6px; justify-content:flex-end; flex-wrap:wrap">
+          <button class="btn btn-primary" style="padding:7px 10px; font-size:11px" onclick="setStatus(${o.id},'Payée')">Valider</button>
+          <button class="btn btn-ghost" style="padding:7px 10px; font-size:11px" onclick="setStatus(${o.id},'Annulée')">Annuler</button>
+          <button class="btn btn-ghost" style="padding:7px 10px; font-size:11px" onclick="resetStatus(${o.id})">À valider</button>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+  lucide.createIcons();
+}
+function setStatus(id, status){
+  const orders=getOrders();
+  const o=orders.find(x=>x.id===id);
+  if(o){ o.status=status; saveOrders(orders); renderAdmin(); renderOrders(); toast('Commande '+o.number+' → '+status); }
+}
+function resetStatus(id){ setStatus(id,'À valider') }
+function saveLink(orderId, productId){
+  const inp=document.querySelector(`input[data-link="${orderId}-${productId}"]`);
+  const val=inp.value.trim();
+  if(val && !/^https?:\/\/.+/i.test(val)){ toast('Lien invalide (doit commencer par https://)'); return; }
+  const orders=getOrders();
+  const o=orders.find(x=>x.id===orderId);
+  if(!o) return;
+  if(!o.links) o.links={};
+  if(val) o.links[productId]=val; else delete o.links[productId];
+  saveOrders(orders);
+  renderAdmin(); renderOrders();
+  toast('Lien enregistré');
+}
+
+// ---------- routing ----------
+function router(){
+  const hash = location.hash || "#/";
+  const path = hash.replace(/^#/, '');
+  // close mobile
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('burger').setAttribute('aria-expanded','false');
+  // hide all pages
+  document.querySelectorAll('[data-page]').forEach(el=>el.classList.add('hidden'));
+  // nav active
+  document.querySelectorAll('[data-nav]').forEach(a=>a.classList.remove('active'));
+
+  if(path.startsWith('/produit/')){
+    const id = parseInt(path.split('/')[2],10);
+    currentProductId = id;
+    document.getElementById('page-produit').classList.remove('hidden');
+    renderProductPage();
+    window.scrollTo(0,0);
+    return;
+  }
+  if(path.startsWith('/boutique')){
+    document.getElementById('page-boutique').classList.remove('hidden');
+    document.querySelector('[data-nav="boutique"]')?.classList.add('active');
+    renderBoutique();
+  } else if(path.startsWith('/formation')){
+    document.getElementById('page-formation').classList.remove('hidden');
+    document.querySelector('[data-nav="formation"]')?.classList.add('active');
+    renderModules();
+  } else if(path.startsWith('/espace')){
+    document.getElementById('page-espace').classList.remove('hidden');
+    document.querySelector('[data-nav="espace"]')?.classList.add('active');
+    renderOrders();
+  } else if(path.startsWith('/paiement') || path.startsWith('/checkout')){
+    document.getElementById('page-paiement').classList.remove('hidden');
+    document.querySelector('[data-nav="paiement"]')?.classList.add('active');
+    renderCart();
+  } else if(path.startsWith('/admin')){
+    document.getElementById('page-admin').classList.remove('hidden');
+    if(isAdmin()) showAdminDash(); else showAdminLogin();
+  } else {
+    document.getElementById('page-accueil').classList.remove('hidden');
+    document.querySelector('[data-nav="accueil"]')?.classList.add('active');
+  }
+  window.scrollTo(0,0);
+  lucide.createIcons();
+}
+
+// ---------- init ----------
+document.addEventListener('DOMContentLoaded', ()=>{
+  renderHomeCats();
+  renderFeatured();
+  renderFilters();
+  renderBoutique();
+  renderModules();
+  renderCart();
+  renderOrders();
+  lucide.createIcons();
+  router();
+  // burger
+  document.getElementById('burger').addEventListener('click', ()=>{
+    const m=document.getElementById('mobileMenu');
+    const open=m.classList.toggle('open');
+    document.getElementById('burger').setAttribute('aria-expanded', open?'true':'false');
+    m.setAttribute('aria-hidden', open?'false':'true');
+  });
+  document.getElementById('btnCart').addEventListener('click', openCart);
+  // overlay esc
+  document.addEventListener('keydown', e=>{
+    if(e.key==='Escape'){ closeCart(); document.getElementById('mobileMenu').classList.remove('open'); }
+  });
+  // sanitize localStorage on load (escape already)
+  // hash
+  window.addEventListener('hashchange', router);
+  // prevent cart form submit refresh
+  // close drawer on nav click
+  document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click', ()=>{ document.getElementById('mobileMenu').classList.remove('open'); }));
+});
+
+// expose for inline handlers
+window.addToCart=addToCart;
+window.openProduct=openProduct;
+window.updateQty=updateQty;
+window.removeFromCart=removeFromCart;
+window.clearCart=clearCart;
+window.closeCart=closeCart;
+window.openCart=openCart;
+window.setFilter=setFilter;
+window.goFilter=goFilter;
+window.switchPreview=switchPreview;
+window.toggleModule=toggleModule;
+window.trackOrder=trackOrder;
+window.copyToClipboard=copyToClipboard;
+window.submitCheckout=submitCheckout;
+window.addFormationToCart=addFormationToCart;
+window.adminLogin=adminLogin;
+window.adminLogout=adminLogout;
+window.setStatus=setStatus;
+window.resetStatus=resetStatus;
+window.saveLink=saveLink;
 </script>
 </body>
 </html>
